@@ -2,7 +2,7 @@
 
 ---
 
-### Category Name 1 
+### Public Health Portfolio 
 
 [Philadelphia Hospitalizations by Zip Code](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
