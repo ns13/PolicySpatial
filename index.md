@@ -4,7 +4,7 @@
 
 ### Public Health Portfolio 
 
-[Philadelphia Hospitalizations by Zip Code](/sample_page)
+[Philadelphia Hospitalizations by Zip Code](https://htmlpreview.github.io/?https://github.com/ns13/COVID-19-Philadelphia/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
