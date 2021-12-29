@@ -1,0 +1,37 @@
+/*
+    Demo for this article:
+    http://blustemy.io/creating-a-table-of-contents-in-javascript/
+*/
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.table-of-contents {
+    display: inline-block;
+    padding: 0 1em;
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    font-size: .8em;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters#Nesting_counters */
+.table-of-contents ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: counter-table-of-contents;
+}
+
+.table-of-contents ol ol {
+    padding-left: 2em;
+}
+
+.table-of-contents ol li {
+    margin: .5em 0;
+}
+
+.table-of-contents ol li::before {
+    counter-increment: counter-table-of-contents;
+    content: counters(counter-table-of-contents, ".") " ";
+    opacity: .7;
+}
