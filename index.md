@@ -2,13 +2,13 @@
 
 ---
 
-### Public Health Portfolio 
+### Public Health Portfolio
 
-[Philadelphia Hospitalizations by Zip Code](https://ns13.github.io/PolicySpatial/sample_page)
+[Philadelphia COVID-19 Hospitalizations by Zip Code](https://ns13.github.io/PolicySpatial/sample_page)
 <img src="images/Screen Shot 2021-11-20 at 6.24.34 PM.png?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Closed & Converted Philadelphia Schools Tracker](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
