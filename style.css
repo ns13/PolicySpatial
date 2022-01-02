@@ -35,3 +35,27 @@ body {
     content: counters(counter-table-of-contents, ".") " ";
     opacity: .7;
 }
+
+.hsg-rich-text__wrapper code {
+
+padding: 1rem;
+    background-color: #efefef;
+    display: block;
+    border: 1px solid #ccc;
+    font-family: 'Courier';
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.hsg-rich-text__wrapper pre {
+    position: absolute;
+    width: 150px;
+    padding: 20px 0;
+    border-top: 3px solid #ff7a59;
+    border-bottom: 3px solid #ff7a59;
+    font-size: 1.5rem;
+    line-height: 33px;
+    margin-top: 53px;
+    left: 50px;
+    white-space: pre-wrap;
+}

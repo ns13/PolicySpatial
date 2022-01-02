@@ -6,7 +6,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   with particular attention to health disparities, economic development, environmental racism, and social justice.
   <br><br>
   If you'd like to contact me, please send an email here: nick@policyspatial.com
-  <br><br>
+  <br></br>
   <a href="https://www.linkedin.com/in/nicholastscott/">View My LinkedIn Profile</a>
 
 theme: jekyll-theme-minimal
