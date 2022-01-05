@@ -8,7 +8,7 @@
 <img src="images/Screen Shot 2021-11-20 at 6.24.34 PM.png?raw=true"/>
 
 ---
-[Closed & Converted Philadelphia Schools Tracker](/pdf/sample_presentation.pdf)
+[Closed & Converted Philadelphia Schools Tracker](https://ns13.github.io/PolicySpatial/Project2.html)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
@@ -21,10 +21,10 @@
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
+<!--- [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
 - [Project 5 Title](http://example.com/)
-
+-->
 ---
 
 
