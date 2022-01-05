@@ -7,7 +7,11 @@
     font-family: "Arial", sans-serif;
 }
 
-
+#container{
+  width:960px;
+  margin:0 auto;
+  /*more CSS*/
+}
 
 .classes_screenshot {
   height: 30px;
