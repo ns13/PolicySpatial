@@ -4,24 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Thinking, Creating, Sharing my data science analysis about my city." name="description"/>
     <link rel="stylesheet" type="text/css"  href="./style.css">
     <script src="./table.js"></script>
     <div href=ns13.github.io/PolicySpatial>PolicySpatial</div>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CMerriweather:300,300italic,400,400italic,700,700italic,900,900italic%7CLato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CLora:regular,italic" media="all">
     </head>
 
-
-
+<body>
 <div class="blog-post-header wf-section"><div class="container"><div class="post-info-wrapper"><a href="https://ns13.github.io/PolicySpatial" class="post-info when-link">←&nbsp;view all posts</a></div><h1 class="blog-page-title">Wherever far wow thus a squirrel</h1><div class="post-info-wrapper"><div class="post-info">June 25, 2020</div><div class="post-info">|</div>
 
 
-<iframe width='50%' height='600px' src="https://api.mapbox.com/styles/v1/nscott13/ckvx0z9s64bo214s3bm29lz36.html?title=false&access_token=pk.eyJ1IjoibnNjb3R0MTMiLCJhIjoiY2t1c2RxN3Q5NWU5ZjJvbnpmZjltem1zciJ9.SiRbbhyau2uJfO5PzpY0ig&zoomwheel=false#11.12/39.9732/-75.1623" title="Basic" style="border:none;"></iframe>
+<div id="__next"><style data-emotion-css="92b7mc-allFontFaces">@font-face{font-family:JetBrainsMonoNL;src:url('https://waffles.datacamp.com/fonts/JetBrainsMono-Regular.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/JetBrainsMono-Regular.woff') format('woff'),url('https://waffles.datacamp.com/fonts/JetBrainsMonoNL-Regular.ttf') format('truetype');font-style:'normal';font-weight:400;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.ttf') format('truetype');font-weight:800;font-display:swap;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.ttf') format('truetype');font-weight:100;font-display:swap;}</style>
+
+<div class="flex flex-col max-w-screen-xl min-h-screen px-5 mx-auto overflow-x-hidden md:px-10">
+  <header class="relative block md:items-center md:justify-center md:flex md:pt-5">
+    <div class="flex items-center justify-between mt-5 mb-3">
+    <div class="md:absolute md:left-0 md:top-6"><nav class="text-lg">
+    <a class="p-1 -ml-1" href="/">RDocumentation</a></nav>
+
+
+
+
+<iframe width='100%' height='600px' src="https://api.mapbox.com/styles/v1/nscott13/ckvx0z9s64bo214s3bm29lz36.html?title=false&access_token=pk.eyJ1IjoibnNjb3R0MTMiLCJhIjoiY2t1c2RxN3Q5NWU5ZjJvbnpmZjltem1zciJ9.SiRbbhyau2uJfO5PzpY0ig&zoomwheel=false#11.12/39.9732/-75.1623" title="Basic" style="border:none;"></iframe>
+
+
 
 <br> </br>
 <div class="Ongoing_Cases">
   <h1 class="Title">Analysis</h1>
   <p>Yo</p>
+  <pre><code>library(cronR)
+f   &lt;- system.file(package = "cronR", "extdata", "helloworld.R")
+cmd &lt;- cron_rscript(f)
+cmd
 
+cron_add(command = cmd, frequency = 'minutely', id = 'test1', description = 'My process 1', tags = c('lab', 'xyz'))
+cron_add(command = cmd, frequency = 'daily', at='7AM', id = 'test2')
+cron_njobs()
+
+cron_ls()
+cron_clear(ask = TRUE)
+cron_ls()
+
+cmd &lt;- cron_rscript(f, rscript_args = c("productx", "arg2", "123"))
+cmd
+cron_add(cmd, frequency = 'minutely', id = 'job1', description = 'Customers')
+cron_add(cmd, frequency = 'hourly', id = 'job2', description = 'Weather')
+cron_add(cmd, frequency = 'hourly', id = 'job3', days_of_week = c(1, 2))
+cron_add(cmd, frequency = 'hourly', id = 'job4', at = '00:20', days_of_week = c(1, 2))
+cron_add(cmd, frequency = 'daily', id = 'job5', at = '14:20')
+cron_add(cmd, frequency = 'daily', id = 'job6', at = '14:20', days_of_week = c(0, 3, 5))
+cron_add(cmd, frequency = 'daily', id = 'job7', at = '23:59', days_of_month = c(1, 30))
+cron_add(cmd, frequency = 'monthly', id = 'job8', at = '10:30', days_of_month = 'first', days_of_week = '*')
+cron_add(cmd, frequency = '@reboot', id = 'job9', description = 'Good morning')
+cron_add(cmd, frequency = '*/15 * * * *', id = 'job10', description = 'Every 15 min')
+cron_ls()
+cron_clear(ask = TRUE)</code></pre>
 </div>
 <img  class="cases_screenshot" src="images/cases.png?raw=true"/>
 
@@ -30,4 +69,5 @@
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-    </html>
+</body>
+</html>
