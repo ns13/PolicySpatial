@@ -27,58 +27,7 @@
 
 <div id="__next"><style data-emotion-css="92b7mc-allFontFaces">@font-face{font-family:JetBrainsMonoNL;src:url('https://waffles.datacamp.com/fonts/JetBrainsMono-Regular.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/JetBrainsMono-Regular.woff') format('woff'),url('https://waffles.datacamp.com/fonts/JetBrainsMonoNL-Regular.ttf') format('truetype');font-style:'normal';font-weight:400;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Bold.ttf') format('truetype');font-weight:800;font-display:swap;}@font-face{font-family:Studio-Feixen-Sans;src:url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.woff2') format('woff2'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.woff') format('woff'),url('https://waffles.datacamp.com/fonts/StudioFeixenSans-Book.ttf') format('truetype');font-weight:100;font-display:swap;}</style>
 
-  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-      <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-        <ul class="nav navbar-nav">
-  <li><a class="nav-link" href="#strings"><span class="header-section-number">14</span> Strings</a></li>
-  <li>
-  <a class="nav-link" href="#introduction-8"><span class="header-section-number">14.1</span> Introduction</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#prerequisites-8"><span class="header-section-number">14.1.1</span> Prerequisites</a></li></ul>
-  </li>
-  <li>
-  <a class="nav-link" href="#string-basics"><span class="header-section-number">14.2</span> String basics</a><ul class="nav navbar-nav">
-  <li><a class="nav-link" href="#string-length"><span class="header-section-number">14.2.1</span> String length</a></li>
-  <li><a class="nav-link" href="#combining-strings"><span class="header-section-number">14.2.2</span> Combining strings</a></li>
-  <li><a class="nav-link" href="#subsetting-strings"><span class="header-section-number">14.2.3</span> Subsetting strings</a></li>
-  <li><a class="nav-link" href="#locales"><span class="header-section-number">14.2.4</span> Locales</a></li>
-  <li><a class="nav-link" href="#exercises-32"><span class="header-section-number">14.2.5</span> Exercises</a></li>
-  </ul>
-  </li>
-  <li>
-  <a class="nav-link" href="#matching-patterns-with-regular-expressions"><span class="header-section-number">14.3</span> Matching patterns with regular expressions</a><ul class="nav navbar-nav">
-  <li><a class="nav-link" href="#basic-matches"><span class="header-section-number">14.3.1</span> Basic matches</a></li>
-  <li><a class="nav-link" href="#anchors"><span class="header-section-number">14.3.2</span> Anchors</a></li>
-  <li><a class="nav-link" href="#character-classes-and-alternatives"><span class="header-section-number">14.3.3</span> Character classes and alternatives</a></li>
-  <li><a class="nav-link" href="#repetition"><span class="header-section-number">14.3.4</span> Repetition</a></li>
-  <li><a class="nav-link" href="#grouping-and-backreferences"><span class="header-section-number">14.3.5</span> Grouping and backreferences</a></li>
-  </ul>
-  </li>
-  <li>
-  <a class="nav-link" href="#tools"><span class="header-section-number">14.4</span> Tools</a><ul class="nav navbar-nav">
-  <li><a class="nav-link" href="#detect-matches"><span class="header-section-number">14.4.1</span> Detect matches</a></li>
-  <li><a class="nav-link" href="#extract-matches"><span class="header-section-number">14.4.2</span> Extract matches</a></li>
-  <li><a class="nav-link" href="#grouped-matches"><span class="header-section-number">14.4.3</span> Grouped matches</a></li>
-  <li><a class="nav-link" href="#replacing-matches"><span class="header-section-number">14.4.4</span> Replacing matches</a></li>
-  <li><a class="nav-link" href="#splitting"><span class="header-section-number">14.4.5</span> Splitting</a></li>
-  <li><a class="nav-link" href="#find-matches"><span class="header-section-number">14.4.6</span> Find matches</a></li>
-  </ul>
-  </li>
-  <li>
-  <a class="nav-link" href="#other-types-of-pattern"><span class="header-section-number">14.5</span> Other types of pattern</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-43"><span class="header-section-number">14.5.1</span> Exercises</a></li></ul>
-  </li>
-  <li><a class="nav-link" href="#other-uses-of-regular-expressions"><span class="header-section-number">14.6</span> Other uses of regular expressions</a></li>
-  <li>
-  <a class="nav-link" href="#stringi"><span class="header-section-number">14.7</span> stringi</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-44"><span class="header-section-number">14.7.1</span> Exercises</a></li></ul>
-  </li>
-  </ul>
 
-        <div class="book-extra">
-          <ul class="list-unstyled">
-  <li><a id="book-source" href="https://github.com/hadley/r4ds/blob/master/strings.Rmd">View source <i class="fab fa-github" aria-hidden="true"></i></a></li>
-            <li><a id="book-edit" href="https://github.com/hadley/r4ds/edit/master/strings.Rmd">Edit this page <i class="fab fa-github" aria-hidden="true"></i></a></li>
-          </ul>
-  </div>
-      </nav>
-  </div>
 
 <div class="flex flex-col max-w-screen-xl min-h-screen px-5 mx-auto overflow-x-hidden md:px-10">
   <header class="relative block md:items-center md:justify-center md:flex md:pt-5">
