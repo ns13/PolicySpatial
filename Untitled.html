@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +8,10 @@
 <title>14 Strings | R for Data Science</title>
 <meta name="author" content="Hadley Wickham and Garrett Grolemund">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src='https://d33wubrfki0l68.cloudfront.net/js/8bffb2f9d34bfa25d90b02e2a7d4c3fc0a5af3fe/libs/jquery-3.5.1/jquery-3.5.1.min.js'></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/c414a0c93201323aa7892ee18d16eb17bb598928/libs/bootstrap-4.5.3/bootstrap.min.css'/>
-<script src='https://d33wubrfki0l68.cloudfront.net/js/a89482942b49bd0cb49ed5f68ebcf4ac621a8a87/libs/bootstrap-4.5.3/bootstrap.bundle.min.js'></script><script src='https://d33wubrfki0l68.cloudfront.net/bundles/130af9c4536b38d98f14dec8d09ed9cff78cd8b5.js'></script><link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/87f4121111ca8864e43aa1dc242276331e65a9c9/libs/bs4_book-1.0.0/bs4_book.css'/><script src='https://d33wubrfki0l68.cloudfront.net/bundles/018bdbb4188f509f77742c8df4a92b1841a8ccce.js'></script><link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/5a3693f819a0335879f231732853fd1c82000a96/libs/str_view-0.1.0/str_view.css'/><link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/a23ef5165478366e0fa9aaaa337616811875243a/libs/leaflet-1.3.1/leaflet.css'/>
-<script src='https://d33wubrfki0l68.cloudfront.net/js/99d61f12c9dc8e61437533e390306e528700be0b/libs/leaflet-1.3.1/leaflet.js'></script><link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/a9da95204e3837803d28f6379f432f4bb2db634a/libs/leafletfix-1.0.0/leafletfix.css'/>
-<script src='https://d33wubrfki0l68.cloudfront.net/bundles/fc2ec34ba10a296cc2104c8152de0c86c017500e.css'></script><script src='https://d33wubrfki0l68.cloudfront.net/bundles/6f30a01dd82771e4c48ca3b69adc067820fd7d0e.js'></script><link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/bd8b355c769f4944ddabdc08c5a224f67c23e711/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css'/><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-115082821-1"></script><script>
+<link href='https://d33wubrfki0l68.cloudfront.net/css/c414a0c93201323aa7892ee18d16eb17bb598928/libs/bootstrap-4.5.3/bootstrap.min.css' rel='stylesheet'/>
+<script src='https://d33wubrfki0l68.cloudfront.net/js/a89482942b49bd0cb49ed5f68ebcf4ac621a8a87/libs/bootstrap-4.5.3/bootstrap.bundle.min.js'></script><script src='https://d33wubrfki0l68.cloudfront.net/bundles/130af9c4536b38d98f14dec8d09ed9cff78cd8b5.js'></script><link href='https://d33wubrfki0l68.cloudfront.net/css/87f4121111ca8864e43aa1dc242276331e65a9c9/libs/bs4_book-1.0.0/bs4_book.css' rel='stylesheet'/><script src='https://d33wubrfki0l68.cloudfront.net/bundles/018bdbb4188f509f77742c8df4a92b1841a8ccce.js'></script><link href='https://d33wubrfki0l68.cloudfront.net/css/5a3693f819a0335879f231732853fd1c82000a96/libs/str_view-0.1.0/str_view.css' rel='stylesheet'/><link href='https://d33wubrfki0l68.cloudfront.net/css/a23ef5165478366e0fa9aaaa337616811875243a/libs/leaflet-1.3.1/leaflet.css' rel='stylesheet'/>
+<script src='https://d33wubrfki0l68.cloudfront.net/js/99d61f12c9dc8e61437533e390306e528700be0b/libs/leaflet-1.3.1/leaflet.js'></script><link href='https://d33wubrfki0l68.cloudfront.net/css/a9da95204e3837803d28f6379f432f4bb2db634a/libs/leafletfix-1.0.0/leafletfix.css' rel='stylesheet'/>
+<script src='https://d33wubrfki0l68.cloudfront.net/bundles/fc2ec34ba10a296cc2104c8152de0c86c017500e.css'></script><script src='https://d33wubrfki0l68.cloudfront.net/bundles/6f30a01dd82771e4c48ca3b69adc067820fd7d0e.js'></script><link href='https://d33wubrfki0l68.cloudfront.net/css/bd8b355c769f4944ddabdc08c5a224f67c23e711/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css' rel='stylesheet'/><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-115082821-1"></script><script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -20,7 +21,7 @@
 </head>
 <body data-spy="scroll" data-target="#toc">
 
-  <div class="container-fluid">
+<div class="container-fluid">
 <div class="row">
   <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
@@ -36,7 +37,7 @@
         <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
 </form>
 
-<nav aria-label="Table of contents"><h2>Table of contents</h2>
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Welcome</a></li>
 <li><a class="" href="introduction.html"><span class="header-section-number">1</span> Introduction</a></li>
@@ -45,54 +46,1252 @@
 <li><a class="" href="data-visualisation.html"><span class="header-section-number">3</span> Data visualisation</a></li>
 <li><a class="" href="workflow-basics.html"><span class="header-section-number">4</span> Workflow: basics</a></li>
 <li><a class="" href="transform.html"><span class="header-section-number">5</span> Data transformation</a></li>
-<li><a class="" href="workflow-scripts.html">
-
-
-
-
-  <span class="header-section-number">14</span> Strings<a class="anchor" aria-label="anchor" href="#strings"><i class="fas fa-link"></i></a>
-  </h1>
-  <div id="introduction-8" class="section level2">
-  <h2>
-  <span class="header-section-number">14.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-8"><i class="fas fa-link"></i></a>
-  </h2>
-  <p>This chapter introduces you to string manipulation in R. You’ll learn the basics of how strings work and how to create them by hand, but the focus of this chapter will be on regular expressions, or regexps for short. Regular expressions are useful because strings usually contain unstructured or semi-structured data, and regexps are a concise language for describing patterns in strings. When you first look at a regexp, you’ll think a cat walked across your keyboard, but as your understanding improves they will soon start to make sense.</p>
-  <div id="prerequisites-8" class="section level3">
-  <h3>
-  <span class="header-section-number">14.1.1</span> Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites-8"><i class="fas fa-link"></i></a>
-  </h3>
-  <a class="nav-link" href="#other-types-of-pattern"><span class="header-section-number">14.5</span> Other types of pattern</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-43"><span class="header-section-number">14.5.1</span> Exercises</a></li></ul>
-  </li>
-  <li><a class="nav-link" href="#other-uses-of-regular-expressions"><span class="header-section-number">14.6</span> Other uses of regular expressions</a></li>
-  <li>
-  <a class="nav-link" href="#stringi"><span class="header-section-number">14.7</span> stringi</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-44"><span class="header-section-number">14.7.1</span> Exercises</a></li></ul>
-  </li>
-  </ul>
-  
+<li><a class="" href="workflow-scripts.html"><span class="header-section-number">6</span> Workflow: scripts</a></li>
+<li><a class="" href="exploratory-data-analysis.html"><span class="header-section-number">7</span> Exploratory Data Analysis</a></li>
+<li><a class="" href="workflow-projects.html"><span class="header-section-number">8</span> Workflow: projects</a></li>
+<li class="book-part">Wrangle</li>
+<li><a class="" href="wrangle-intro.html"><span class="header-section-number">9</span> Introduction</a></li>
+<li><a class="" href="tibbles.html"><span class="header-section-number">10</span> Tibbles</a></li>
+<li><a class="" href="data-import.html"><span class="header-section-number">11</span> Data import</a></li>
+<li><a class="" href="tidy-data.html"><span class="header-section-number">12</span> Tidy data</a></li>
+<li><a class="" href="relational-data.html"><span class="header-section-number">13</span> Relational data</a></li>
+<li><a class="active" href="strings.html"><span class="header-section-number">14</span> Strings</a></li>
+<li><a class="" href="factors.html"><span class="header-section-number">15</span> Factors</a></li>
+<li><a class="" href="dates-and-times.html"><span class="header-section-number">16</span> Dates and times</a></li>
+<li class="book-part">Program</li>
+<li><a class="" href="program-intro.html"><span class="header-section-number">17</span> Introduction</a></li>
+<li><a class="" href="pipes.html"><span class="header-section-number">18</span> Pipes</a></li>
+<li><a class="" href="functions.html"><span class="header-section-number">19</span> Functions</a></li>
+<li><a class="" href="vectors.html"><span class="header-section-number">20</span> Vectors</a></li>
+<li><a class="" href="iteration.html"><span class="header-section-number">21</span> Iteration</a></li>
+<li class="book-part">Model</li>
+<li><a class="" href="model-intro.html"><span class="header-section-number">22</span> Introduction</a></li>
+<li><a class="" href="model-basics.html"><span class="header-section-number">23</span> Model basics</a></li>
+<li><a class="" href="model-building.html"><span class="header-section-number">24</span> Model building</a></li>
+<li><a class="" href="many-models.html"><span class="header-section-number">25</span> Many models</a></li>
+<li class="book-part">Communicate</li>
+<li><a class="" href="communicate-intro.html"><span class="header-section-number">26</span> Introduction</a></li>
+<li><a class="" href="r-markdown.html"><span class="header-section-number">27</span> R Markdown</a></li>
+<li><a class="" href="graphics-for-communication.html"><span class="header-section-number">28</span> Graphics for communication</a></li>
+<li><a class="" href="r-markdown-formats.html"><span class="header-section-number">29</span> R Markdown formats</a></li>
+<li><a class="" href="r-markdown-workflow.html"><span class="header-section-number">30</span> R Markdown workflow</a></li>
+</ul>
 
         <div class="book-extra">
-          <ul class="list-unstyled">
-  <li><a id="book-source" href="https://github.com/hadley/r4ds/blob/master/strings.Rmd">View source <i class="fab fa-github" aria-hidden="true"></i></a></li>
-            <li><a id="book-edit" href="https://github.com/hadley/r4ds/edit/master/strings.Rmd">Edit this page <i class="fab fa-github" aria-hidden="true"></i></a></li>
-          </ul>
-  </div>
+          <p><a id="book-repo" href="https://github.com/hadley/r4ds">View book source <i class="fab fa-github"></i></a></p>
+        </div>
       </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="strings" class="section level1">
+<h1>
+<span class="header-section-number">14</span> Strings<a class="anchor" aria-label="anchor" href="#strings"><i class="fas fa-link"></i></a>
+</h1>
+<div id="introduction-8" class="section level2">
+<h2>
+<span class="header-section-number">14.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-8"><i class="fas fa-link"></i></a>
+</h2>
+<p>This chapter introduces you to string manipulation in R. You’ll learn the basics of how strings work and how to create them by hand, but the focus of this chapter will be on regular expressions, or regexps for short. Regular expressions are useful because strings usually contain unstructured or semi-structured data, and regexps are a concise language for describing patterns in strings. When you first look at a regexp, you’ll think a cat walked across your keyboard, but as your understanding improves they will soon start to make sense.</p>
+<div id="prerequisites-8" class="section level3">
+<h3>
+<span class="header-section-number">14.1.1</span> Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites-8"><i class="fas fa-link"></i></a>
+</h3>
+<p>This chapter will focus on the <strong>stringr</strong> package for string manipulation, which is part of the core tidyverse.</p>
+<div class="sourceCode" id="cb282"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></code></pre></div>
+</div>
+</div>
+<div id="string-basics" class="section level2">
+<h2>
+<span class="header-section-number">14.2</span> String basics<a class="anchor" aria-label="anchor" href="#string-basics"><i class="fas fa-link"></i></a>
+</h2>
+<p>You can create strings with either single quotes or double quotes. Unlike other languages, there is no difference in behaviour. I recommend always using <code>"</code>, unless you want to create a string that contains multiple <code>"</code>.</p>
+<div class="sourceCode" id="cb283"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">string1</span> <span class="op">&lt;-</span> <span class="st">"This is a string"</span>
+<span class="va">string2</span> <span class="op">&lt;-</span> <span class="st">'If I want to include a "quote" inside a string, I use single quotes'</span></code></pre></div>
+<p>If you forget to close a quote, you’ll see <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>, the continuation character:</p>
+<pre><code>&gt; "This is a string without a closing quote
++
++
++ HELP I'M STUCK</code></pre>
+<p>If this happen to you, press Escape and try again!</p>
+<p>To include a literal single or double quote in a string you can use <code>\</code> to “escape” it:</p>
+<div class="sourceCode" id="cb285"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">double_quote</span> <span class="op">&lt;-</span> <span class="st">"\""</span> <span class="co"># or '"'</span>
+<span class="va">single_quote</span> <span class="op">&lt;-</span> <span class="st">'\''</span> <span class="co"># or "'"</span></code></pre></div>
+<p>That means if you want to include a literal backslash, you’ll need to double it up: <code>"\\"</code>.</p>
+<p>Beware that the printed representation of a string is not the same as string itself, because the printed representation shows the escapes. To see the raw contents of the string, use <code><a href="https://rdrr.io/r/base/writeLines.html">writeLines()</a></code>:</p>
+<div class="sourceCode" id="cb286"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"\""</span>, <span class="st">"\\"</span><span class="op">)</span>
+<span class="va">x</span>
+<span class="co">#&gt; [1] "\"" "\\"</span>
+<span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
+<span class="co">#&gt; "</span>
+<span class="co">#&gt; \</span></code></pre></div>
+<p>There are a handful of other special characters. The most common are <code>"\n"</code>, newline, and <code>"\t"</code>, tab, but you can see the complete list by requesting help on <code>"</code>: <code><a href="https://rdrr.io/r/base/Quotes.html">?'"'</a></code>, or <code><a href="https://rdrr.io/r/base/Quotes.html">?"'"</a></code>. You’ll also sometimes see strings like <code>"\u00b5"</code>, this is a way of writing non-English characters that works on all platforms:</p>
+<div class="sourceCode" id="cb287"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"\u00b5"</span>
+<span class="va">x</span>
+<span class="co">#&gt; [1] "µ"</span></code></pre></div>
+<p>Multiple strings are often stored in a character vector, which you can create with <code><a href="https://rdrr.io/r/base/c.html">c()</a></code>:</p>
+<div class="sourceCode" id="cb288"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"one"</span>, <span class="st">"two"</span>, <span class="st">"three"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "one"   "two"   "three"</span></code></pre></div>
+<div id="string-length" class="section level3">
+<h3>
+<span class="header-section-number">14.2.1</span> String length<a class="anchor" aria-label="anchor" href="#string-length"><i class="fas fa-link"></i></a>
+</h3>
+<p>Base R contains many functions to work with strings but we’ll avoid them because they can be inconsistent, which makes them hard to remember. Instead we’ll use functions from stringr. These have more intuitive names, and all start with <code>str_</code>. For example, <code>str_length()</code> tells you the number of characters in a string:</p>
+<div class="sourceCode" id="cb289"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_length</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"R for data science"</span>, <span class="cn">NA</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1]  1 18 NA</span></code></pre></div>
+<p>The common <code>str_</code> prefix is particularly useful if you use RStudio, because typing <code>str_</code> will trigger autocomplete, allowing you to see all stringr functions:</p>
+<div class="inline-figure"><img src="https://d33wubrfki0l68.cloudfront.net/7d1defbecac1e73595c3841f2753a09734dcb0be/0b58f/screenshots/stringr-autocomplete.png" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="combining-strings" class="section level3">
+<h3>
+<span class="header-section-number">14.2.2</span> Combining strings<a class="anchor" aria-label="anchor" href="#combining-strings"><i class="fas fa-link"></i></a>
+</h3>
+<p>To combine two or more strings, use <code>str_c()</code>:</p>
+<div class="sourceCode" id="cb290"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_c</span><span class="op">(</span><span class="st">"x"</span>, <span class="st">"y"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "xy"</span>
+<span class="fu">str_c</span><span class="op">(</span><span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "xyz"</span></code></pre></div>
+<p>Use the <code>sep</code> argument to control how they’re separated:</p>
+<div class="sourceCode" id="cb291"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_c</span><span class="op">(</span><span class="st">"x"</span>, <span class="st">"y"</span>, sep <span class="op">=</span> <span class="st">", "</span><span class="op">)</span>
+<span class="co">#&gt; [1] "x, y"</span></code></pre></div>
+<p>Like most other functions in R, missing values are contagious. If you want them to print as <code>"NA"</code>, use <code>str_replace_na()</code>:</p>
+<div class="sourceCode" id="cb292"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"abc"</span>, <span class="cn">NA</span><span class="op">)</span>
+<span class="fu">str_c</span><span class="op">(</span><span class="st">"|-"</span>, <span class="va">x</span>, <span class="st">"-|"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "|-abc-|" NA</span>
+<span class="fu">str_c</span><span class="op">(</span><span class="st">"|-"</span>, <span class="fu">str_replace_na</span><span class="op">(</span><span class="va">x</span><span class="op">)</span>, <span class="st">"-|"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "|-abc-|" "|-NA-|"</span></code></pre></div>
+<p>As shown above, <code>str_c()</code> is vectorised, and it automatically recycles shorter vectors to the same length as the longest:</p>
+<div class="sourceCode" id="cb293"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_c</span><span class="op">(</span><span class="st">"prefix-"</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span><span class="op">)</span>, <span class="st">"-suffix"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "prefix-a-suffix" "prefix-b-suffix" "prefix-c-suffix"</span></code></pre></div>
+<p>Objects of length 0 are silently dropped. This is particularly useful in conjunction with <code>if</code>:</p>
+<div class="sourceCode" id="cb294"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">name</span> <span class="op">&lt;-</span> <span class="st">"Hadley"</span>
+<span class="va">time_of_day</span> <span class="op">&lt;-</span> <span class="st">"morning"</span>
+<span class="va">birthday</span> <span class="op">&lt;-</span> <span class="cn">FALSE</span>
+
+<span class="fu">str_c</span><span class="op">(</span>
+  <span class="st">"Good "</span>, <span class="va">time_of_day</span>, <span class="st">" "</span>, <span class="va">name</span>,
+  <span class="kw">if</span> <span class="op">(</span><span class="va">birthday</span><span class="op">)</span> <span class="st">" and HAPPY BIRTHDAY"</span>,
+  <span class="st">"."</span>
+<span class="op">)</span>
+<span class="co">#&gt; [1] "Good morning Hadley."</span></code></pre></div>
+<p>To collapse a vector of strings into a single string, use <code>collapse</code>:</p>
+<div class="sourceCode" id="cb295"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_c</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span><span class="op">)</span>, collapse <span class="op">=</span> <span class="st">", "</span><span class="op">)</span>
+<span class="co">#&gt; [1] "x, y, z"</span></code></pre></div>
+</div>
+<div id="subsetting-strings" class="section level3">
+<h3>
+<span class="header-section-number">14.2.3</span> Subsetting strings<a class="anchor" aria-label="anchor" href="#subsetting-strings"><i class="fas fa-link"></i></a>
+</h3>
+<p>You can extract parts of a string using <code>str_sub()</code>. As well as the string, <code>str_sub()</code> takes <code>start</code> and <code>end</code> arguments which give the (inclusive) position of the substring:</p>
+<div class="sourceCode" id="cb296"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Apple"</span>, <span class="st">"Banana"</span>, <span class="st">"Pear"</span><span class="op">)</span>
+<span class="fu">str_sub</span><span class="op">(</span><span class="va">x</span>, <span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span>
+<span class="co">#&gt; [1] "App" "Ban" "Pea"</span>
+<span class="co"># negative numbers count backwards from end</span>
+<span class="fu">str_sub</span><span class="op">(</span><span class="va">x</span>, <span class="op">-</span><span class="fl">3</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span>
+<span class="co">#&gt; [1] "ple" "ana" "ear"</span></code></pre></div>
+<p>Note that <code>str_sub()</code> won’t fail if the string is too short: it will just return as much as possible:</p>
+<div class="sourceCode" id="cb297"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_sub</span><span class="op">(</span><span class="st">"a"</span>, <span class="fl">1</span>, <span class="fl">5</span><span class="op">)</span>
+<span class="co">#&gt; [1] "a"</span></code></pre></div>
+<p>You can also use the assignment form of <code>str_sub()</code> to modify strings:</p>
+<div class="sourceCode" id="cb298"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_sub</span><span class="op">(</span><span class="va">x</span>, <span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">str_to_lower</span><span class="op">(</span><span class="fu">str_sub</span><span class="op">(</span><span class="va">x</span>, <span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>
+<span class="va">x</span>
+<span class="co">#&gt; [1] "apple"  "banana" "pear"</span></code></pre></div>
+</div>
+<div id="locales" class="section level3">
+<h3>
+<span class="header-section-number">14.2.4</span> Locales<a class="anchor" aria-label="anchor" href="#locales"><i class="fas fa-link"></i></a>
+</h3>
+<p>Above I used <code>str_to_lower()</code> to change the text to lower case. You can also use <code>str_to_upper()</code> or <code>str_to_title()</code>. However, changing case is more complicated than it might at first appear because different languages have different rules for changing case. You can pick which set of rules to use by specifying a locale:</p>
+<div class="sourceCode" id="cb299"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Turkish has two i's: with and without a dot, and it</span>
+<span class="co"># has a different rule for capitalising them:</span>
+<span class="fu">str_to_upper</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"i"</span>, <span class="st">"ı"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] "I" "I"</span>
+<span class="fu">str_to_upper</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"i"</span>, <span class="st">"ı"</span><span class="op">)</span>, locale <span class="op">=</span> <span class="st">"tr"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "İ" "I"</span></code></pre></div>
+<p>The locale is specified as a ISO 639 language code, which is a two or three letter abbreviation. If you don’t already know the code for your language, <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">Wikipedia</a> has a good list. If you leave the locale blank, it will use the current locale, as provided by your operating system.</p>
+<p>Another important operation that’s affected by the locale is sorting. The base R <code><a href="https://rdrr.io/r/base/order.html">order()</a></code> and <code><a href="https://rdrr.io/r/base/sort.html">sort()</a></code> functions sort strings using the current locale. If you want robust behaviour across different computers, you may want to use <code>str_sort()</code> and <code>str_order()</code> which take an additional <code>locale</code> argument:</p>
+<div class="sourceCode" id="cb300"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"eggplant"</span>, <span class="st">"banana"</span><span class="op">)</span>
+
+<span class="fu">str_sort</span><span class="op">(</span><span class="va">x</span>, locale <span class="op">=</span> <span class="st">"en"</span><span class="op">)</span>  <span class="co"># English</span>
+<span class="co">#&gt; [1] "apple"    "banana"   "eggplant"</span>
+
+<span class="fu">str_sort</span><span class="op">(</span><span class="va">x</span>, locale <span class="op">=</span> <span class="st">"haw"</span><span class="op">)</span> <span class="co"># Hawaiian</span>
+<span class="co">#&gt; [1] "apple"    "eggplant" "banana"</span></code></pre></div>
+</div>
+<div id="exercises-32" class="section level3">
+<h3>
+<span class="header-section-number">14.2.5</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-32"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p>In code that doesn’t use stringr, you’ll often see <code><a href="https://rdrr.io/r/base/paste.html">paste()</a></code> and <code><a href="https://rdrr.io/r/base/paste.html">paste0()</a></code>.
+What’s the difference between the two functions? What stringr function are
+they equivalent to? How do the functions differ in their handling of
+<code>NA</code>?</p></li>
+<li><p>In your own words, describe the difference between the <code>sep</code> and <code>collapse</code>
+arguments to <code>str_c()</code>.</p></li>
+<li><p>Use <code>str_length()</code> and <code>str_sub()</code> to extract the middle character from
+a string. What will you do if the string has an even number of characters?</p></li>
+<li><p>What does <code>str_wrap()</code> do? When might you want to use it?</p></li>
+<li><p>What does <code>str_trim()</code> do? What’s the opposite of <code>str_trim()</code>?</p></li>
+<li><p>Write a function that turns (e.g.) a vector <code><a href="https://rdrr.io/r/base/c.html">c("a", "b", "c")</a></code> into
+the string <code>a, b, and c</code>. Think carefully about what it should do if
+given a vector of length 0, 1, or 2.</p></li>
+</ol>
+</div>
+</div>
+<div id="matching-patterns-with-regular-expressions" class="section level2">
+<h2>
+<span class="header-section-number">14.3</span> Matching patterns with regular expressions<a class="anchor" aria-label="anchor" href="#matching-patterns-with-regular-expressions"><i class="fas fa-link"></i></a>
+</h2>
+<p>Regexps are a very terse language that allow you to describe patterns in strings. They take a little while to get your head around, but once you understand them, you’ll find them extremely useful.</p>
+<p>To learn regular expressions, we’ll use <code>str_view()</code> and <code>str_view_all()</code>. These functions take a character vector and a regular expression, and show you how they match. We’ll start with very simple regular expressions and then gradually get more and more complicated. Once you’ve mastered pattern matching, you’ll learn how to apply those ideas with various stringr functions.</p>
+<div id="basic-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.3.1</span> Basic matches<a class="anchor" aria-label="anchor" href="#basic-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p>The simplest patterns match exact strings:</p>
+<div class="sourceCode" id="cb301"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"pear"</span><span class="op">)</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"an"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-ac96cb3ee4656e2e9ec3" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ac96cb3ee4656e2e9ec3">{"x":{"html":"<ul>\n  <li>apple<\/li>\n  <li>b<span class='match'>an<\/span>ana<\/li>\n  <li>pear<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>The next step up in complexity is <code>.</code>, which matches any character (except a newline):</p>
+<div class="sourceCode" id="cb302"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">".a."</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-e5c8c404fe174e4c81bd" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e5c8c404fe174e4c81bd">{"x":{"html":"<ul>\n  <li>apple<\/li>\n  <li><span class='match'>ban<\/span>ana<\/li>\n  <li>p<span class='match'>ear<\/span><\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>But if “<code>.</code>” matches any character, how do you match the character “<code>.</code>”? You need to use an “escape” to tell the regular expression you want to match it exactly, not use its special behaviour. Like strings, regexps use the backslash, <code>\</code>, to escape special behaviour. So to match an <code>.</code>, you need the regexp <code>\.</code>. Unfortunately this creates a problem. We use strings to represent regular expressions, and <code>\</code> is also used as an escape symbol in strings. So to create the regular expression <code>\.</code> we need the string <code>"\\."</code>.</p>
+<div class="sourceCode" id="cb303"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># To create the regular expression, we need \\</span>
+<span class="va">dot</span> <span class="op">&lt;-</span> <span class="st">"\\."</span>
+
+<span class="co"># But the expression itself only contains one:</span>
+<span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">dot</span><span class="op">)</span>
+<span class="co">#&gt; \.</span>
+
+<span class="co"># And this tells R to look for an explicit .</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"abc"</span>, <span class="st">"a.c"</span>, <span class="st">"bef"</span><span class="op">)</span>, <span class="st">"a\\.c"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-36aa3d2a04d42bbc2145" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-36aa3d2a04d42bbc2145">{"x":{"html":"<ul>\n  <li>abc<\/li>\n  <li><span class='match'>a.c<\/span><\/li>\n  <li>bef<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>If <code>\</code> is used as an escape character in regular expressions, how do you match a literal <code>\</code>? Well you need to escape it, creating the regular expression <code>\\</code>. To create that regular expression, you need to use a string, which also needs to escape <code>\</code>. That means to match a literal <code>\</code> you need to write <code>"\\\\"</code> — you need four backslashes to match one!</p>
+<div class="sourceCode" id="cb304"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"a\\b"</span>
+<span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
+<span class="co">#&gt; a\b</span>
+
+<span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"\\\\"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-febe03efa1a2d8d52a86" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-febe03efa1a2d8d52a86">{"x":{"html":"<ul>\n  <li>a<span class='match'>\\<\/span>b<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>In this book, I’ll write regular expression as <code>\.</code> and strings that represent the regular expression as <code>"\\."</code>.</p>
+<div id="exercises-33" class="section level4">
+<h4>
+<span class="header-section-number">14.3.1.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-33"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Explain why each of these strings don’t match a <code>\</code>: <code>"\"</code>, <code>"\\"</code>, <code>"\\\"</code>.</p></li>
+<li><p>How would you match the sequence <code>"'\</code>?</p></li>
+<li><p>What patterns will the regular expression <code>\..\..\..</code> match?
+How would you represent it as a string?</p></li>
+</ol>
+</div>
+</div>
+<div id="anchors" class="section level3">
+<h3>
+<span class="header-section-number">14.3.2</span> Anchors<a class="anchor" aria-label="anchor" href="#anchors"><i class="fas fa-link"></i></a>
+</h3>
+<p>By default, regular expressions will match any part of a string. It’s often useful to <em>anchor</em> the regular expression so that it matches from the start or end of the string. You can use:</p>
+<ul>
+<li>
+<code><a href="https://rdrr.io/r/base/Arithmetic.html">^</a></code> to match the start of the string.</li>
+<li>
+<code><a href="https://rdrr.io/r/base/Extract.html">$</a></code> to match the end of the string.</li>
+</ul>
+<div class="sourceCode" id="cb305"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"pear"</span><span class="op">)</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"^a"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-1fb4450895fe099f74a1" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1fb4450895fe099f74a1">{"x":{"html":"<ul>\n  <li><span class='match'>a<\/span>pple<\/li>\n  <li>banana<\/li>\n  <li>pear<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb306"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"a$"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-10b3b7155e8045a1b2ad" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-10b3b7155e8045a1b2ad">{"x":{"html":"<ul>\n  <li>apple<\/li>\n  <li>banan<span class='match'>a<\/span><\/li>\n  <li>pear<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>To remember which is which, try this mnemonic which I learned from <a href="https://twitter.com/emisshula/status/323863393167613953">Evan Misshula</a>: if you begin with power (<code><a href="https://rdrr.io/r/base/Arithmetic.html">^</a></code>), you end up with money (<code><a href="https://rdrr.io/r/base/Extract.html">$</a></code>).</p>
+<p>To force a regular expression to only match a complete string, anchor it with both <code><a href="https://rdrr.io/r/base/Arithmetic.html">^</a></code> and <code><a href="https://rdrr.io/r/base/Extract.html">$</a></code>:</p>
+<div class="sourceCode" id="cb307"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple pie"</span>, <span class="st">"apple"</span>, <span class="st">"apple cake"</span><span class="op">)</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"apple"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-4018eef1a407a0df6b52" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4018eef1a407a0df6b52">{"x":{"html":"<ul>\n  <li><span class='match'>apple<\/span> pie<\/li>\n  <li><span class='match'>apple<\/span><\/li>\n  <li><span class='match'>apple<\/span> cake<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb308"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"^apple$"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-5b1b2f4ad92281566982" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5b1b2f4ad92281566982">{"x":{"html":"<ul>\n  <li>apple pie<\/li>\n  <li><span class='match'>apple<\/span><\/li>\n  <li>apple cake<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>You can also match the boundary between words with <code>\b</code>. I don’t often use this in R, but I will sometimes use it when I’m doing a search in RStudio when I want to find the name of a function that’s a component of other functions. For example, I’ll search for <code>\bsum\b</code> to avoid matching <code>summarise</code>, <code>summary</code>, <code>rowsum</code> and so on.</p>
+<div id="exercises-34" class="section level4">
+<h4>
+<span class="header-section-number">14.3.2.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-34"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>How would you match the literal string <code>"$^$"</code>?</p></li>
+<li>
+<p>Given the corpus of common words in <code><a href="https://stringr.tidyverse.org/reference/stringr-data.html">stringr::words</a></code>, create regular
+expressions that find all words that:</p>
+<ol style="list-style-type: decimal">
+<li>Start with “y”.</li>
+<li>End with “x”</li>
+<li>Are exactly three letters long. (Don’t cheat by using <code>str_length()</code>!)</li>
+<li>Have seven letters or more.</li>
+</ol>
+<p>Since this list is long, you might want to use the <code>match</code> argument to
+<code>str_view()</code> to show only the matching or non-matching words.</p>
+</li>
+</ol>
+</div>
+</div>
+<div id="character-classes-and-alternatives" class="section level3">
+<h3>
+<span class="header-section-number">14.3.3</span> Character classes and alternatives<a class="anchor" aria-label="anchor" href="#character-classes-and-alternatives"><i class="fas fa-link"></i></a>
+</h3>
+<p>There are a number of special patterns that match more than one character. You’ve already seen <code>.</code>, which matches any character apart from a newline. There are four other useful tools:</p>
+<ul>
+<li>
+<code>\d</code>: matches any digit.</li>
+<li>
+<code>\s</code>: matches any whitespace (e.g. space, tab, newline).</li>
+<li>
+<code>[abc]</code>: matches a, b, or c.</li>
+<li>
+<code>[^abc]</code>: matches anything except a, b, or c.</li>
+</ul>
+<p>Remember, to create a regular expression containing <code>\d</code> or <code>\s</code>, you’ll need to escape the <code>\</code> for the string, so you’ll type <code>"\\d"</code> or <code>"\\s"</code>.</p>
+<p>A character class containing a single character is a nice alternative to backslash escapes when you want to include a single metacharacter in a regex. Many people find this more readable.</p>
+<div class="sourceCode" id="cb309"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Look for a literal character that normally has special meaning in a regex</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"abc"</span>, <span class="st">"a.c"</span>, <span class="st">"a*c"</span>, <span class="st">"a c"</span><span class="op">)</span>, <span class="st">"a[.]c"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-25c3e940e6859592f801" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-25c3e940e6859592f801">{"x":{"html":"<ul>\n  <li>abc<\/li>\n  <li><span class='match'>a.c<\/span><\/li>\n  <li>a*c<\/li>\n  <li>a c<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb310"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"abc"</span>, <span class="st">"a.c"</span>, <span class="st">"a*c"</span>, <span class="st">"a c"</span><span class="op">)</span>, <span class="st">".[*]c"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-3f27c09be0c60bb52829" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3f27c09be0c60bb52829">{"x":{"html":"<ul>\n  <li>abc<\/li>\n  <li>a.c<\/li>\n  <li><span class='match'>a*c<\/span><\/li>\n  <li>a c<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb311"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"abc"</span>, <span class="st">"a.c"</span>, <span class="st">"a*c"</span>, <span class="st">"a c"</span><span class="op">)</span>, <span class="st">"a[ ]"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-416566eb193bf50d04e6" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-416566eb193bf50d04e6">{"x":{"html":"<ul>\n  <li>abc<\/li>\n  <li>a.c<\/li>\n  <li>a*c<\/li>\n  <li><span class='match'>a <\/span>c<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>This works for most (but not all) regex metacharacters: <code><a href="https://rdrr.io/r/base/Extract.html">$</a></code> <code>.</code> <code><a href="https://rdrr.io/r/base/Logic.html">|</a></code> <code><a href="https://rdrr.io/r/utils/Question.html">?</a></code> <code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code> <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code> <code>(</code> <code>)</code> <code><a href="https://rdrr.io/r/base/Extract.html">[</a></code> <code>{</code>. Unfortunately, a few characters have special meaning even inside a character class and must be handled with backslash escapes: <code>]</code> <code>\</code> <code><a href="https://rdrr.io/r/base/Arithmetic.html">^</a></code> and <code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code>.</p>
+<p>You can use <em>alternation</em> to pick between one or more alternative patterns. For example, <code>abc|d..f</code> will match either ‘“abc”’, or <code>"deaf"</code>. Note that the precedence for <code><a href="https://rdrr.io/r/base/Logic.html">|</a></code> is low, so that <code>abc|xyz</code> matches <code>abc</code> or <code>xyz</code> not <code>abcyz</code> or <code>abxyz</code>. Like with mathematical expressions, if precedence ever gets confusing, use parentheses to make it clear what you want:</p>
+<div class="sourceCode" id="cb312"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"grey"</span>, <span class="st">"gray"</span><span class="op">)</span>, <span class="st">"gr(e|a)y"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-72cbf064100ce560a04c" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-72cbf064100ce560a04c">{"x":{"html":"<ul>\n  <li><span class='match'>grey<\/span><\/li>\n  <li><span class='match'>gray<\/span><\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div id="exercises-35" class="section level4">
+<h4>
+<span class="header-section-number">14.3.3.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-35"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>
+<p>Create regular expressions to find all words that:</p>
+<ol style="list-style-type: decimal">
+<li><p>Start with a vowel.</p></li>
+<li><p>That only contain consonants. (Hint: thinking about matching
+“not”-vowels.)</p></li>
+<li><p>End with <code>ed</code>, but not with <code>eed</code>.</p></li>
+<li><p>End with <code>ing</code> or <code>ise</code>.</p></li>
+</ol>
+</li>
+<li><p>Empirically verify the rule “i before e except after c”.</p></li>
+<li><p>Is “q” always followed by a “u”?</p></li>
+<li><p>Write a regular expression that matches a word if it’s probably written
+in British English, not American English.</p></li>
+<li><p>Create a regular expression that will match telephone numbers as commonly
+written in your country.</p></li>
+</ol>
+</div>
+</div>
+<div id="repetition" class="section level3">
+<h3>
+<span class="header-section-number">14.3.4</span> Repetition<a class="anchor" aria-label="anchor" href="#repetition"><i class="fas fa-link"></i></a>
+</h3>
+<p>The next step up in power involves controlling how many times a pattern matches:</p>
+<ul>
+<li>
+<code><a href="https://rdrr.io/r/utils/Question.html">?</a></code>: 0 or 1</li>
+<li>
+<code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>: 1 or more</li>
+<li>
+<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>: 0 or more</li>
+</ul>
+<div class="sourceCode" id="cb313"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"1888 is the longest year in Roman numerals: MDCCCLXXXVIII"</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"CC?"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-d11fc4360aa0230696d7" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d11fc4360aa0230696d7">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CC<\/span>CLXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb314"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"CC+"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-21c7483268bafca56cec" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-21c7483268bafca56cec">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CCC<\/span>LXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb315"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">'C[LX]+'</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-1834a22cd196f3aa03a1" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1834a22cd196f3aa03a1">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MDCC<span class='match'>CLXXX<\/span>VIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>Note that the precedence of these operators is high, so you can write: <code>colou?r</code> to match either American or British spellings. That means most uses will need parentheses, like <code>bana(na)+</code>.</p>
+<p>You can also specify the number of matches precisely:</p>
+<ul>
+<li>
+<code>{n}</code>: exactly n</li>
+<li>
+<code>{n,}</code>: n or more</li>
+<li>
+<code>{,m}</code>: at most m</li>
+<li>
+<code>{n,m}</code>: between n and m</li>
+</ul>
+<div class="sourceCode" id="cb316"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"C{2}"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-28515d92cb327f90c9eb" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-28515d92cb327f90c9eb">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CC<\/span>CLXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb317"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"C{2,}"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-0caf26d4e3c00206b0c5" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0caf26d4e3c00206b0c5">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CCC<\/span>LXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb318"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">"C{2,3}"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-da0b268a2927f570ebf3" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-da0b268a2927f570ebf3">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CCC<\/span>LXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>By default these matches are “greedy”: they will match the longest string possible. You can make them “lazy”, matching the shortest string possible by putting a <code><a href="https://rdrr.io/r/utils/Question.html">?</a></code> after them. This is an advanced feature of regular expressions, but it’s useful to know that it exists:</p>
+<div class="sourceCode" id="cb319"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">'C{2,3}?'</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-0ed12bb554391c49c2e3" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0ed12bb554391c49c2e3">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MD<span class='match'>CC<\/span>CLXXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb320"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">x</span>, <span class="st">'C[LX]+?'</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-ec658d41f8c4f2d124e9" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ec658d41f8c4f2d124e9">{"x":{"html":"<ul>\n  <li>1888 is the longest year in Roman numerals: MDCC<span class='match'>CL<\/span>XXXVIII<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div id="exercises-36" class="section level4">
+<h4>
+<span class="header-section-number">14.3.4.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-36"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Describe the equivalents of <code><a href="https://rdrr.io/r/utils/Question.html">?</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code> in <code>{m,n}</code> form.</p></li>
+<li>
+<p>Describe in words what these regular expressions match:
+(read carefully to see if I’m using a regular expression or a string
+that defines a regular expression.)</p>
+<ol style="list-style-type: decimal">
+<li><code>^.*$</code></li>
+<li><code>"\\{.+\\}"</code></li>
+<li><code>\d{4}-\d{2}-\d{2}</code></li>
+<li><code>"\\\\{4}"</code></li>
+</ol>
+</li>
+<li>
+<p>Create regular expressions to find all words that:</p>
+<ol style="list-style-type: decimal">
+<li>Start with three consonants.</li>
+<li>Have three or more vowels in a row.</li>
+<li>Have two or more vowel-consonant pairs in a row.</li>
+</ol>
+</li>
+<li><p>Solve the beginner regexp crosswords at
+<a href="https://regexcrossword.com/challenges/beginner" class="uri">https://regexcrossword.com/challenges/beginner</a>.</p></li>
+</ol>
+</div>
+</div>
+<div id="grouping-and-backreferences" class="section level3">
+<h3>
+<span class="header-section-number">14.3.5</span> Grouping and backreferences<a class="anchor" aria-label="anchor" href="#grouping-and-backreferences"><i class="fas fa-link"></i></a>
+</h3>
+<p>Earlier, you learned about parentheses as a way to disambiguate complex expressions. Parentheses also create a <em>numbered</em> capturing group (number 1, 2 etc.). A capturing group stores <em>the part of the string</em> matched by the part of the regular expression inside the parentheses. You can refer to the same text as previously matched by a capturing group with <em>backreferences</em>, like <code>\1</code>, <code>\2</code> etc. For example, the following regular expression finds all fruits that have a repeated pair of letters.</p>
+<div class="sourceCode" id="cb321"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">fruit</span>, <span class="st">"(..)\\1"</span>, match <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-6b83523733b890d61edc" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6b83523733b890d61edc">{"x":{"html":"<ul>\n  <li>b<span class='match'>anan<\/span>a<\/li>\n  <li><span class='match'>coco<\/span>nut<\/li>\n  <li><span class='match'>cucu<\/span>mber<\/li>\n  <li><span class='match'>juju<\/span>be<\/li>\n  <li><span class='match'>papa<\/span>ya<\/li>\n  <li>s<span class='match'>alal<\/span> berry<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>(Shortly, you’ll also see how they’re useful in conjunction with <code>str_match()</code>.)</p>
+<div id="exercises-37" class="section level4">
+<h4>
+<span class="header-section-number">14.3.5.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-37"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>
+<p>Describe, in words, what these expressions will match:</p>
+<ol style="list-style-type: decimal">
+<li><code>(.)\1\1</code></li>
+<li><code>"(.)(.)\\2\\1"</code></li>
+<li><code>(..)\1</code></li>
+<li><code>"(.).\\1.\\1"</code></li>
+<li><code>"(.)(.)(.).*\\3\\2\\1"</code></li>
+</ol>
+</li>
+<li>
+<p>Construct regular expressions to match words that:</p>
+<ol style="list-style-type: decimal">
+<li><p>Start and end with the same character.</p></li>
+<li><p>Contain a repeated pair of letters
+(e.g. “church” contains “ch” repeated twice.)</p></li>
+<li><p>Contain one letter repeated in at least three places
+(e.g. “eleven” contains three “e”s.)</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="tools" class="section level2">
+<h2>
+<span class="header-section-number">14.4</span> Tools<a class="anchor" aria-label="anchor" href="#tools"><i class="fas fa-link"></i></a>
+</h2>
+<p>Now that you’ve learned the basics of regular expressions, it’s time to learn how to apply them to real problems. In this section you’ll learn a wide array of stringr functions that let you:</p>
+<ul>
+<li>Determine which strings match a pattern.</li>
+<li>Find the positions of matches.</li>
+<li>Extract the content of matches.</li>
+<li>Replace matches with new values.</li>
+<li>Split a string based on a match.</li>
+</ul>
+<p>A word of caution before we continue: because regular expressions are so powerful, it’s easy to try and solve every problem with a single regular expression. In the words of Jamie Zawinski:</p>
+<blockquote>
+<p>Some people, when confronted with a problem, think “I know, I’ll use regular
+expressions.” Now they have two problems.</p>
+</blockquote>
+<p>As a cautionary tale, check out this regular expression that checks if a email address is valid:</p>
+<pre><code>(?:(?:\r\n)?[ \t])*(?:(?:(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t]
+)+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:
+\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(
+?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[
+\t]))*"(?:(?:\r\n)?[ \t])*))*@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\0
+31]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\
+](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+
+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:
+(?:\r\n)?[ \t])*))*|(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z
+|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)
+?[ \t])*)*\&lt;(?:(?:\r\n)?[ \t])*(?:@(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\
+r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[
+ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)
+?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t]
+)*))*(?:,@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[
+ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*
+)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t]
+)+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*)
+*:(?:(?:\r\n)?[ \t])*)?(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+
+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r
+\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:
+\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t
+]))*"(?:(?:\r\n)?[ \t])*))*@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031
+]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](
+?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?
+:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?
+:\r\n)?[ \t])*))*\&gt;(?:(?:\r\n)?[ \t])*)|(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?
+:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?
+[ \t]))*"(?:(?:\r\n)?[ \t])*)*:(?:(?:\r\n)?[ \t])*(?:(?:(?:[^()&lt;&gt;@,;:\\".\[\]
+\000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|
+\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;
+@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"
+(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*))*@(?:(?:\r\n)?[ \t]
+)*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\
+".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?
+:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[
+\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*|(?:[^()&lt;&gt;@,;:\\".\[\] \000-
+\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(
+?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)*\&lt;(?:(?:\r\n)?[ \t])*(?:@(?:[^()&lt;&gt;@,;
+:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([
+^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\"
+.\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\
+]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*(?:,@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\
+[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\
+r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\]
+\000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]
+|\\.)*\](?:(?:\r\n)?[ \t])*))*)*:(?:(?:\r\n)?[ \t])*)?(?:[^()&lt;&gt;@,;:\\".\[\] \0
+00-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\
+.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,
+;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|"(?
+:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*))*@(?:(?:\r\n)?[ \t])*
+(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".
+\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[
+^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]
+]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*\&gt;(?:(?:\r\n)?[ \t])*)(?:,\s*(
+?:(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\
+".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)(?:\.(?:(
+?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[
+\["()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t
+])*))*@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t
+])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?
+:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|
+\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*|(?:
+[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\
+]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)*\&lt;(?:(?:\r\n)
+?[ \t])*(?:@(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["
+()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)
+?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;
+@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*(?:,@(?:(?:\r\n)?[
+ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,
+;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t]
+)*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\
+".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*)*:(?:(?:\r\n)?[ \t])*)?
+(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\["()&lt;&gt;@,;:\\".
+\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])*)(?:\.(?:(?:
+\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z|(?=[\[
+"()&lt;&gt;@,;:\\".\[\]]))|"(?:[^\"\r\\]|\\.|(?:(?:\r\n)?[ \t]))*"(?:(?:\r\n)?[ \t])
+*))*@(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])
++|\Z|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\
+.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\[\] \000-\031]+(?:(?:(?:\r\n)?[ \t])+|\Z
+|(?=[\["()&lt;&gt;@,;:\\".\[\]]))|\[([^\[\]\r\\]|\\.)*\](?:(?:\r\n)?[ \t])*))*\&gt;(?:(
+?:\r\n)?[ \t])*))*)?;\s*)</code></pre>
+<p>This is a somewhat pathological example (because email addresses are actually surprisingly complex), but is used in real code. See the stackoverflow discussion at <a href="http://stackoverflow.com/a/201378" class="uri">http://stackoverflow.com/a/201378</a> for more details.</p>
+<p>Don’t forget that you’re in a programming language and you have other tools at your disposal. Instead of creating one complex regular expression, it’s often easier to write a series of simpler regexps. If you get stuck trying to create a single regexp that solves your problem, take a step back and think if you could break the problem down into smaller pieces, solving each challenge before moving onto the next one.</p>
+<div id="detect-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.4.1</span> Detect matches<a class="anchor" aria-label="anchor" href="#detect-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p>To determine if a character vector matches a pattern, use <code>str_detect()</code>. It returns a logical vector the same length as the input:</p>
+<div class="sourceCode" id="cb323"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"pear"</span><span class="op">)</span>
+<span class="fu">str_detect</span><span class="op">(</span><span class="va">x</span>, <span class="st">"e"</span><span class="op">)</span>
+<span class="co">#&gt; [1]  TRUE FALSE  TRUE</span></code></pre></div>
+<p>Remember that when you use a logical vector in a numeric context, <code>FALSE</code> becomes 0 and <code>TRUE</code> becomes 1. That makes <code><a href="https://rdrr.io/r/base/sum.html">sum()</a></code> and <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code> useful if you want to answer questions about matches across a larger vector:</p>
+<div class="sourceCode" id="cb324"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># How many common words start with t?</span>
+<span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fu">str_detect</span><span class="op">(</span><span class="va">words</span>, <span class="st">"^t"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] 65</span>
+<span class="co"># What proportion of common words end with a vowel?</span>
+<span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="fu">str_detect</span><span class="op">(</span><span class="va">words</span>, <span class="st">"[aeiou]$"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] 0.2765306</span></code></pre></div>
+<p>When you have complex logical conditions (e.g. match a or b but not c unless d) it’s often easier to combine multiple <code>str_detect()</code> calls with logical operators, rather than trying to create a single regular expression. For example, here are two ways to find all words that don’t contain any vowels:</p>
+<div class="sourceCode" id="cb325"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Find all words containing at least one vowel, and negate</span>
+<span class="va">no_vowels_1</span> <span class="op">&lt;-</span> <span class="op">!</span><span class="fu">str_detect</span><span class="op">(</span><span class="va">words</span>, <span class="st">"[aeiou]"</span><span class="op">)</span>
+<span class="co"># Find all words consisting only of consonants (non-vowels)</span>
+<span class="va">no_vowels_2</span> <span class="op">&lt;-</span> <span class="fu">str_detect</span><span class="op">(</span><span class="va">words</span>, <span class="st">"^[^aeiou]+$"</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">no_vowels_1</span>, <span class="va">no_vowels_2</span><span class="op">)</span>
+<span class="co">#&gt; [1] TRUE</span></code></pre></div>
+<p>The results are identical, but I think the first approach is significantly easier to understand. If your regular expression gets overly complicated, try breaking it up into smaller pieces, giving each piece a name, and then combining the pieces with logical operations.</p>
+<p>A common use of <code>str_detect()</code> is to select the elements that match a pattern. You can do this with logical subsetting, or the convenient <code>str_subset()</code> wrapper:</p>
+<div class="sourceCode" id="cb326"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">words</span><span class="op">[</span><span class="fu">str_detect</span><span class="op">(</span><span class="va">words</span>, <span class="st">"x$"</span><span class="op">)</span><span class="op">]</span>
+<span class="co">#&gt; [1] "box" "sex" "six" "tax"</span>
+<span class="fu">str_subset</span><span class="op">(</span><span class="va">words</span>, <span class="st">"x$"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "box" "sex" "six" "tax"</span></code></pre></div>
+<p>Typically, however, your strings will be one column of a data frame, and you’ll want to use filter instead:</p>
+<div class="sourceCode" id="cb327"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span>
+  word <span class="op">=</span> <span class="va">words</span>,
+  i <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">word</span><span class="op">)</span>
+<span class="op">)</span>
+<span class="va">df</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="fu">str_detect</span><span class="op">(</span><span class="va">word</span>, <span class="st">"x$"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; # A tibble: 4 x 2</span>
+<span class="co">#&gt;   word      i</span>
+<span class="co">#&gt;   &lt;chr&gt; &lt;int&gt;</span>
+<span class="co">#&gt; 1 box     108</span>
+<span class="co">#&gt; 2 sex     747</span>
+<span class="co">#&gt; 3 six     772</span>
+<span class="co">#&gt; 4 tax     841</span></code></pre></div>
+<p>A variation on <code>str_detect()</code> is <code>str_count()</code>: rather than a simple yes or no, it tells you how many matches there are in a string:</p>
+<div class="sourceCode" id="cb328"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"pear"</span><span class="op">)</span>
+<span class="fu">str_count</span><span class="op">(</span><span class="va">x</span>, <span class="st">"a"</span><span class="op">)</span>
+<span class="co">#&gt; [1] 1 3 1</span>
+
+<span class="co"># On average, how many vowels per word?</span>
+<span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="fu">str_count</span><span class="op">(</span><span class="va">words</span>, <span class="st">"[aeiou]"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] 1.991837</span></code></pre></div>
+<p>It’s natural to use <code>str_count()</code> with <code>mutate()</code>:</p>
+<div class="sourceCode" id="cb329"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">df</span> <span class="op">%&gt;%</span>
+  <span class="fu">mutate</span><span class="op">(</span>
+    vowels <span class="op">=</span> <span class="fu">str_count</span><span class="op">(</span><span class="va">word</span>, <span class="st">"[aeiou]"</span><span class="op">)</span>,
+    consonants <span class="op">=</span> <span class="fu">str_count</span><span class="op">(</span><span class="va">word</span>, <span class="st">"[^aeiou]"</span><span class="op">)</span>
+  <span class="op">)</span>
+<span class="co">#&gt; # A tibble: 980 x 4</span>
+<span class="co">#&gt;   word         i vowels consonants</span>
+<span class="co">#&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;int&gt;      &lt;int&gt;</span>
+<span class="co">#&gt; 1 a            1      1          0</span>
+<span class="co">#&gt; 2 able         2      2          2</span>
+<span class="co">#&gt; 3 about        3      3          2</span>
+<span class="co">#&gt; 4 absolute     4      4          4</span>
+<span class="co">#&gt; 5 accept       5      2          4</span>
+<span class="co">#&gt; 6 account      6      3          4</span>
+<span class="co">#&gt; # … with 974 more rows</span></code></pre></div>
+<p>Note that matches never overlap. For example, in <code>"abababa"</code>, how many times will the pattern <code>"aba"</code> match? Regular expressions say two, not three:</p>
+<div class="sourceCode" id="cb330"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_count</span><span class="op">(</span><span class="st">"abababa"</span>, <span class="st">"aba"</span><span class="op">)</span>
+<span class="co">#&gt; [1] 2</span>
+<span class="fu">str_view_all</span><span class="op">(</span><span class="st">"abababa"</span>, <span class="st">"aba"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-b3f7c917b6c8ff580948" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3f7c917b6c8ff580948">{"x":{"html":"<ul>\n  <li><span class='match'>aba<\/span>b<span class='match'>aba<\/span><\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><p>Note the use of <code>str_view_all()</code>. As you’ll shortly learn, many stringr functions come in pairs: one function works with a single match, and the other works with all matches. The second function will have the suffix <code>_all</code>.</p>
+<div id="exercises-38" class="section level4">
+<h4>
+<span class="header-section-number">14.4.1.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-38"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>
+<p>For each of the following challenges, try solving it by using both a single
+regular expression, and a combination of multiple <code>str_detect()</code> calls.</p>
+<ol style="list-style-type: decimal">
+<li><p>Find all words that start or end with <code>x</code>.</p></li>
+<li><p>Find all words that start with a vowel and end with a consonant.</p></li>
+<li><p>Are there any words that contain at least one of each different
+vowel?</p></li>
+</ol>
+</li>
+<li><p>What word has the highest number of vowels? What word has the highest
+proportion of vowels? (Hint: what is the denominator?)</p></li>
+</ol>
+</div>
+</div>
+<div id="extract-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.4.2</span> Extract matches<a class="anchor" aria-label="anchor" href="#extract-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p>To extract the actual text of a match, use <code>str_extract()</code>. To show that off, we’re going to need a more complicated example. I’m going to use the <a href="https://en.wikipedia.org/wiki/Harvard_sentences">Harvard sentences</a>, which were designed to test VOIP systems, but are also useful for practicing regexps. These are provided in <code><a href="https://stringr.tidyverse.org/reference/stringr-data.html">stringr::sentences</a></code>:</p>
+<div class="sourceCode" id="cb331"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">sentences</span><span class="op">)</span>
+<span class="co">#&gt; [1] 720</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">sentences</span><span class="op">)</span>
+<span class="co">#&gt; [1] "The birch canoe slid on the smooth planks." </span>
+<span class="co">#&gt; [2] "Glue the sheet to the dark blue background."</span>
+<span class="co">#&gt; [3] "It's easy to tell the depth of a well."     </span>
+<span class="co">#&gt; [4] "These days a chicken leg is a rare dish."   </span>
+<span class="co">#&gt; [5] "Rice is often served in round bowls."       </span>
+<span class="co">#&gt; [6] "The juice of lemons makes fine punch."</span></code></pre></div>
+<p>Imagine we want to find all sentences that contain a colour. We first create a vector of colour names, and then turn it into a single regular expression:</p>
+<div class="sourceCode" id="cb332"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">colours</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"yellow"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>, <span class="st">"purple"</span><span class="op">)</span>
+<span class="va">colour_match</span> <span class="op">&lt;-</span> <span class="fu">str_c</span><span class="op">(</span><span class="va">colours</span>, collapse <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span>
+<span class="va">colour_match</span>
+<span class="co">#&gt; [1] "red|orange|yellow|green|blue|purple"</span></code></pre></div>
+<p>Now we can select the sentences that contain a colour, and then extract the colour to figure out which one it is:</p>
+<div class="sourceCode" id="cb333"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">has_colour</span> <span class="op">&lt;-</span> <span class="fu">str_subset</span><span class="op">(</span><span class="va">sentences</span>, <span class="va">colour_match</span><span class="op">)</span>
+<span class="va">matches</span> <span class="op">&lt;-</span> <span class="fu">str_extract</span><span class="op">(</span><span class="va">has_colour</span>, <span class="va">colour_match</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">matches</span><span class="op">)</span>
+<span class="co">#&gt; [1] "blue" "blue" "red"  "red"  "red"  "blue"</span></code></pre></div>
+<p>Note that <code>str_extract()</code> only extracts the first match. We can see that most easily by first selecting all the sentences that have more than 1 match:</p>
+<div class="sourceCode" id="cb334"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">more</span> <span class="op">&lt;-</span> <span class="va">sentences</span><span class="op">[</span><span class="fu">str_count</span><span class="op">(</span><span class="va">sentences</span>, <span class="va">colour_match</span><span class="op">)</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">]</span>
+<span class="fu">str_view_all</span><span class="op">(</span><span class="va">more</span>, <span class="va">colour_match</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-d258b2ee1c304ebe1664" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d258b2ee1c304ebe1664">{"x":{"html":"<ul>\n  <li>It is hard to erase <span class='match'>blue<\/span> or <span class='match'>red<\/span> ink.<\/li>\n  <li>The <span class='match'>green<\/span> light in the brown box flicke<span class='match'>red<\/span>.<\/li>\n  <li>The sky in the west is tinged with <span class='match'>orange<\/span> <span class='match'>red<\/span>.<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb335"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu">str_extract</span><span class="op">(</span><span class="va">more</span>, <span class="va">colour_match</span><span class="op">)</span>
+<span class="co">#&gt; [1] "blue"   "green"  "orange"</span></code></pre></div>
+<p>This is a common pattern for stringr functions, because working with a single match allows you to use much simpler data structures. To get all matches, use <code>str_extract_all()</code>. It returns a list:</p>
+<div class="sourceCode" id="cb336"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_extract_all</span><span class="op">(</span><span class="va">more</span>, <span class="va">colour_match</span><span class="op">)</span>
+<span class="co">#&gt; [[1]]</span>
+<span class="co">#&gt; [1] "blue" "red" </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[2]]</span>
+<span class="co">#&gt; [1] "green" "red"  </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[3]]</span>
+<span class="co">#&gt; [1] "orange" "red"</span></code></pre></div>
+<p>You’ll learn more about lists in <a href="vectors.html#lists">lists</a> and <a href="iteration.html#iteration">iteration</a>.</p>
+<p>If you use <code>simplify = TRUE</code>, <code>str_extract_all()</code> will return a matrix with short matches expanded to the same length as the longest:</p>
+<div class="sourceCode" id="cb337"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_extract_all</span><span class="op">(</span><span class="va">more</span>, <span class="va">colour_match</span>, simplify <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="co">#&gt;      [,1]     [,2] </span>
+<span class="co">#&gt; [1,] "blue"   "red"</span>
+<span class="co">#&gt; [2,] "green"  "red"</span>
+<span class="co">#&gt; [3,] "orange" "red"</span>
+
+<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"a b"</span>, <span class="st">"a b c"</span><span class="op">)</span>
+<span class="fu">str_extract_all</span><span class="op">(</span><span class="va">x</span>, <span class="st">"[a-z]"</span>, simplify <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="co">#&gt;      [,1] [,2] [,3]</span>
+<span class="co">#&gt; [1,] "a"  ""   ""  </span>
+<span class="co">#&gt; [2,] "a"  "b"  ""  </span>
+<span class="co">#&gt; [3,] "a"  "b"  "c"</span></code></pre></div>
+<div id="exercises-39" class="section level4">
+<h4>
+<span class="header-section-number">14.4.2.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-39"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>In the previous example, you might have noticed that the regular
+expression matched “flickered”, which is not a colour. Modify the
+regex to fix the problem.</p></li>
+<li>
+<p>From the Harvard sentences data, extract:</p>
+<ol style="list-style-type: decimal">
+<li>The first word from each sentence.</li>
+<li>All words ending in <code>ing</code>.</li>
+<li>All plurals.</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="grouped-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.4.3</span> Grouped matches<a class="anchor" aria-label="anchor" href="#grouped-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p>Earlier in this chapter we talked about the use of parentheses for clarifying precedence and for backreferences when matching. You can also use parentheses to extract parts of a complex match. For example, imagine we want to extract nouns from the sentences. As a heuristic, we’ll look for any word that comes after “a” or “the”. Defining a “word” in a regular expression is a little tricky, so here I use a simple approximation: a sequence of at least one character that isn’t a space.</p>
+<div class="sourceCode" id="cb338"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">noun</span> <span class="op">&lt;-</span> <span class="st">"(a|the) ([^ ]+)"</span>
+
+<span class="va">has_noun</span> <span class="op">&lt;-</span> <span class="va">sentences</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_subset</span><span class="op">(</span><span class="va">noun</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
+<span class="va">has_noun</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_extract</span><span class="op">(</span><span class="va">noun</span><span class="op">)</span>
+<span class="co">#&gt;  [1] "the smooth" "the sheet"  "the depth"  "a chicken"  "the parked"</span>
+<span class="co">#&gt;  [6] "the sun"    "the huge"   "the ball"   "the woman"  "a helps"</span></code></pre></div>
+<p><code>str_extract()</code> gives us the complete match; <code>str_match()</code> gives each individual component. Instead of a character vector, it returns a matrix, with one column for the complete match followed by one column for each group:</p>
+<div class="sourceCode" id="cb339"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">has_noun</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_match</span><span class="op">(</span><span class="va">noun</span><span class="op">)</span>
+<span class="co">#&gt;       [,1]         [,2]  [,3]     </span>
+<span class="co">#&gt;  [1,] "the smooth" "the" "smooth" </span>
+<span class="co">#&gt;  [2,] "the sheet"  "the" "sheet"  </span>
+<span class="co">#&gt;  [3,] "the depth"  "the" "depth"  </span>
+<span class="co">#&gt;  [4,] "a chicken"  "a"   "chicken"</span>
+<span class="co">#&gt;  [5,] "the parked" "the" "parked" </span>
+<span class="co">#&gt;  [6,] "the sun"    "the" "sun"    </span>
+<span class="co">#&gt;  [7,] "the huge"   "the" "huge"   </span>
+<span class="co">#&gt;  [8,] "the ball"   "the" "ball"   </span>
+<span class="co">#&gt;  [9,] "the woman"  "the" "woman"  </span>
+<span class="co">#&gt; [10,] "a helps"    "a"   "helps"</span></code></pre></div>
+<p>(Unsurprisingly, our heuristic for detecting nouns is poor, and also picks up adjectives like smooth and parked.)</p>
+<p>If your data is in a tibble, it’s often easier to use <code><a href="https://tidyr.tidyverse.org/reference/extract.html">tidyr::extract()</a></code>. It works like <code>str_match()</code> but requires you to name the matches, which are then placed in new columns:</p>
+<div class="sourceCode" id="cb340"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">tibble</span><span class="op">(</span>sentence <span class="op">=</span> <span class="va">sentences</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/extract.html">extract</a></span><span class="op">(</span>
+    <span class="va">sentence</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"article"</span>, <span class="st">"noun"</span><span class="op">)</span>, <span class="st">"(a|the) ([^ ]+)"</span>,
+    remove <span class="op">=</span> <span class="cn">FALSE</span>
+  <span class="op">)</span>
+<span class="co">#&gt; # A tibble: 720 x 3</span>
+<span class="co">#&gt;   sentence                                    article noun   </span>
+<span class="co">#&gt;   &lt;chr&gt;                                       &lt;chr&gt;   &lt;chr&gt;  </span>
+<span class="co">#&gt; 1 The birch canoe slid on the smooth planks.  the     smooth </span>
+<span class="co">#&gt; 2 Glue the sheet to the dark blue background. the     sheet  </span>
+<span class="co">#&gt; 3 It's easy to tell the depth of a well.      the     depth  </span>
+<span class="co">#&gt; 4 These days a chicken leg is a rare dish.    a       chicken</span>
+<span class="co">#&gt; 5 Rice is often served in round bowls.        &lt;NA&gt;    &lt;NA&gt;   </span>
+<span class="co">#&gt; 6 The juice of lemons makes fine punch.       &lt;NA&gt;    &lt;NA&gt;   </span>
+<span class="co">#&gt; # … with 714 more rows</span></code></pre></div>
+<p>Like <code>str_extract()</code>, if you want all matches for each string, you’ll need <code>str_match_all()</code>.</p>
+<div id="exercises-40" class="section level4">
+<h4>
+<span class="header-section-number">14.4.3.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-40"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Find all words that come after a “number” like “one”, “two”, “three” etc.
+Pull out both the number and the word.</p></li>
+<li><p>Find all contractions. Separate out the pieces before and after the
+apostrophe.</p></li>
+</ol>
+</div>
+</div>
+<div id="replacing-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.4.4</span> Replacing matches<a class="anchor" aria-label="anchor" href="#replacing-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p><code>str_replace()</code> and <code>str_replace_all()</code> allow you to replace matches with new strings. The simplest use is to replace a pattern with a fixed string:</p>
+<div class="sourceCode" id="cb341"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"apple"</span>, <span class="st">"pear"</span>, <span class="st">"banana"</span><span class="op">)</span>
+<span class="fu">str_replace</span><span class="op">(</span><span class="va">x</span>, <span class="st">"[aeiou]"</span>, <span class="st">"-"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "-pple"  "p-ar"   "b-nana"</span>
+<span class="fu">str_replace_all</span><span class="op">(</span><span class="va">x</span>, <span class="st">"[aeiou]"</span>, <span class="st">"-"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "-ppl-"  "p--r"   "b-n-n-"</span></code></pre></div>
+<p>With <code>str_replace_all()</code> you can perform multiple replacements by supplying a named vector:</p>
+<div class="sourceCode" id="cb342"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"1 house"</span>, <span class="st">"2 cars"</span>, <span class="st">"3 people"</span><span class="op">)</span>
+<span class="fu">str_replace_all</span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"1"</span> <span class="op">=</span> <span class="st">"one"</span>, <span class="st">"2"</span> <span class="op">=</span> <span class="st">"two"</span>, <span class="st">"3"</span> <span class="op">=</span> <span class="st">"three"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] "one house"    "two cars"     "three people"</span></code></pre></div>
+<p>Instead of replacing with a fixed string you can use backreferences to insert components of the match. In the following code, I flip the order of the second and third words.</p>
+<div class="sourceCode" id="cb343"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">sentences</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_replace</span><span class="op">(</span><span class="st">"([^ ]+) ([^ ]+) ([^ ]+)"</span>, <span class="st">"\\1 \\3 \\2"</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
+<span class="co">#&gt; [1] "The canoe birch slid on the smooth planks." </span>
+<span class="co">#&gt; [2] "Glue sheet the to the dark blue background."</span>
+<span class="co">#&gt; [3] "It's to easy tell the depth of a well."     </span>
+<span class="co">#&gt; [4] "These a days chicken leg is a rare dish."   </span>
+<span class="co">#&gt; [5] "Rice often is served in round bowls."</span></code></pre></div>
+<div id="exercises-41" class="section level4">
+<h4>
+<span class="header-section-number">14.4.4.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-41"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Replace all forward slashes in a string with backslashes.</p></li>
+<li><p>Implement a simple version of <code>str_to_lower()</code> using <code>replace_all()</code>.</p></li>
+<li><p>Switch the first and last letters in <code>words</code>. Which of those strings
+are still words?</p></li>
+</ol>
+</div>
+</div>
+<div id="splitting" class="section level3">
+<h3>
+<span class="header-section-number">14.4.5</span> Splitting<a class="anchor" aria-label="anchor" href="#splitting"><i class="fas fa-link"></i></a>
+</h3>
+<p>Use <code>str_split()</code> to split a string up into pieces. For example, we could split sentences into words:</p>
+<div class="sourceCode" id="cb344"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">sentences</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_split</span><span class="op">(</span><span class="st">" "</span><span class="op">)</span>
+<span class="co">#&gt; [[1]]</span>
+<span class="co">#&gt; [1] "The"     "birch"   "canoe"   "slid"    "on"      "the"     "smooth" </span>
+<span class="co">#&gt; [8] "planks."</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[2]]</span>
+<span class="co">#&gt; [1] "Glue"        "the"         "sheet"       "to"          "the"        </span>
+<span class="co">#&gt; [6] "dark"        "blue"        "background."</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[3]]</span>
+<span class="co">#&gt; [1] "It's"  "easy"  "to"    "tell"  "the"   "depth" "of"    "a"     "well."</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[4]]</span>
+<span class="co">#&gt; [1] "These"   "days"    "a"       "chicken" "leg"     "is"      "a"      </span>
+<span class="co">#&gt; [8] "rare"    "dish."  </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[5]]</span>
+<span class="co">#&gt; [1] "Rice"   "is"     "often"  "served" "in"     "round"  "bowls."</span></code></pre></div>
+<p>Because each component might contain a different number of pieces, this returns a list. If you’re working with a length-1 vector, the easiest thing is to just extract the first element of the list:</p>
+<div class="sourceCode" id="cb345"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="st">"a|b|c|d"</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_split</span><span class="op">(</span><span class="st">"\\|"</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="va">.</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>
+<span class="co">#&gt; [1] "a" "b" "c" "d"</span></code></pre></div>
+<p>Otherwise, like the other stringr functions that return a list, you can use <code>simplify = TRUE</code> to return a matrix:</p>
+<div class="sourceCode" id="cb346"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">sentences</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu">str_split</span><span class="op">(</span><span class="st">" "</span>, simplify <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="co">#&gt;      [,1]    [,2]    [,3]    [,4]      [,5]  [,6]    [,7]     [,8]         </span>
+<span class="co">#&gt; [1,] "The"   "birch" "canoe" "slid"    "on"  "the"   "smooth" "planks."    </span>
+<span class="co">#&gt; [2,] "Glue"  "the"   "sheet" "to"      "the" "dark"  "blue"   "background."</span>
+<span class="co">#&gt; [3,] "It's"  "easy"  "to"    "tell"    "the" "depth" "of"     "a"          </span>
+<span class="co">#&gt; [4,] "These" "days"  "a"     "chicken" "leg" "is"    "a"      "rare"       </span>
+<span class="co">#&gt; [5,] "Rice"  "is"    "often" "served"  "in"  "round" "bowls." ""           </span>
+<span class="co">#&gt;      [,9]   </span>
+<span class="co">#&gt; [1,] ""     </span>
+<span class="co">#&gt; [2,] ""     </span>
+<span class="co">#&gt; [3,] "well."</span>
+<span class="co">#&gt; [4,] "dish."</span>
+<span class="co">#&gt; [5,] ""</span></code></pre></div>
+<p>You can also request a maximum number of pieces:</p>
+<div class="sourceCode" id="cb347"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">fields</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Name: Hadley"</span>, <span class="st">"Country: NZ"</span>, <span class="st">"Age: 35"</span><span class="op">)</span>
+<span class="va">fields</span> <span class="op">%&gt;%</span> <span class="fu">str_split</span><span class="op">(</span><span class="st">": "</span>, n <span class="op">=</span> <span class="fl">2</span>, simplify <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="co">#&gt;      [,1]      [,2]    </span>
+<span class="co">#&gt; [1,] "Name"    "Hadley"</span>
+<span class="co">#&gt; [2,] "Country" "NZ"    </span>
+<span class="co">#&gt; [3,] "Age"     "35"</span></code></pre></div>
+<p>Instead of splitting up strings by patterns, you can also split up by character, line, sentence and word <code>boundary()</code>s:</p>
+<div class="sourceCode" id="cb348"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"This is a sentence.  This is another sentence."</span>
+<span class="fu">str_view_all</span><span class="op">(</span><span class="va">x</span>, <span class="fu">boundary</span><span class="op">(</span><span class="st">"word"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-b8f31ebacaee3527bb86" style="width:960px;height:100%;" class="str_view html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b8f31ebacaee3527bb86">{"x":{"html":"<ul>\n  <li><span class='match'>This<\/span> <span class='match'>is<\/span> <span class='match'>a<\/span> <span class='match'>sentence<\/span>.  <span class='match'>This<\/span> <span class='match'>is<\/span> <span class='match'>another<\/span> <span class='match'>sentence<\/span>.<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb349"><pre class="downlit sourceCode r">
+<code class="sourceCode R">
+<span class="fu">str_split</span><span class="op">(</span><span class="va">x</span>, <span class="st">" "</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>
+<span class="co">#&gt; [1] "This"      "is"        "a"         "sentence." ""          "This"     </span>
+<span class="co">#&gt; [7] "is"        "another"   "sentence."</span>
+<span class="fu">str_split</span><span class="op">(</span><span class="va">x</span>, <span class="fu">boundary</span><span class="op">(</span><span class="st">"word"</span><span class="op">)</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>
+<span class="co">#&gt; [1] "This"     "is"       "a"        "sentence" "This"     "is"       "another" </span>
+<span class="co">#&gt; [8] "sentence"</span></code></pre></div>
+<div id="exercises-42" class="section level4">
+<h4>
+<span class="header-section-number">14.4.5.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-42"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Split up a string like <code>"apples, pears, and bananas"</code> into individual
+components.</p></li>
+<li><p>Why is it better to split up by <code>boundary("word")</code> than <code>" "</code>?</p></li>
+<li><p>What does splitting with an empty string (<code>""</code>) do? Experiment, and
+then read the documentation.</p></li>
+</ol>
+</div>
+</div>
+<div id="find-matches" class="section level3">
+<h3>
+<span class="header-section-number">14.4.6</span> Find matches<a class="anchor" aria-label="anchor" href="#find-matches"><i class="fas fa-link"></i></a>
+</h3>
+<p><code>str_locate()</code> and <code>str_locate_all()</code> give you the starting and ending positions of each match. These are particularly useful when none of the other functions does exactly what you want. You can use <code>str_locate()</code> to find the matching pattern, <code>str_sub()</code> to extract and/or modify them.</p>
+</div>
+</div>
+<div id="other-types-of-pattern" class="section level2">
+<h2>
+<span class="header-section-number">14.5</span> Other types of pattern<a class="anchor" aria-label="anchor" href="#other-types-of-pattern"><i class="fas fa-link"></i></a>
+</h2>
+<p>When you use a pattern that’s a string, it’s automatically wrapped into a call to <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code>:</p>
+<div class="sourceCode" id="cb350"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># The regular call:</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">fruit</span>, <span class="st">"nana"</span><span class="op">)</span>
+<span class="co"># Is shorthand for</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">fruit</span>, <span class="fu"><a href="https://rdrr.io/r/base/regex.html">regex</a></span><span class="op">(</span><span class="st">"nana"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<p>You can use the other arguments of <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code> to control details of the match:</p>
+<ul>
+<li>
+<p><code>ignore_case = TRUE</code> allows characters to match either their uppercase or
+lowercase forms. This always uses the current locale.</p>
+<div class="sourceCode" id="cb351"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">bananas</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"banana"</span>, <span class="st">"Banana"</span>, <span class="st">"BANANA"</span><span class="op">)</span>
+<span class="fu">str_view</span><span class="op">(</span><span class="va">bananas</span>, <span class="st">"banana"</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-b25b670b028f478bf741" style="width:960px;height:100%;" class="str_view html-widget"></div>
+    <script type="application/json" data-for="htmlwidget-b25b670b028f478bf741">{"x":{"html":"<ul>\n  <li><span class='match'>banana<\/span><\/li>\n  <li>Banana<\/li>\n  <li>BANANA<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb352"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_view</span><span class="op">(</span><span class="va">bananas</span>, <span class="fu"><a href="https://rdrr.io/r/base/regex.html">regex</a></span><span class="op">(</span><span class="st">"banana"</span>, ignore_case <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-46d1193f7ba074d981c8" style="width:960px;height:100%;" class="str_view html-widget"></div>
+    <script type="application/json" data-for="htmlwidget-46d1193f7ba074d981c8">{"x":{"html":"<ul>\n  <li><span class='match'>banana<\/span><\/li>\n  <li><span class='match'>Banana<\/span><\/li>\n  <li><span class='match'>BANANA<\/span><\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script>
+</li>
+<li>
+<p><code>multiline = TRUE</code> allows <code><a href="https://rdrr.io/r/base/Arithmetic.html">^</a></code> and <code><a href="https://rdrr.io/r/base/Extract.html">$</a></code> to match the start and end of each
+line rather than the start and end of the complete string.</p>
+<div class="sourceCode" id="cb353"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"Line 1\nLine 2\nLine 3"</span>
+<span class="fu">str_extract_all</span><span class="op">(</span><span class="va">x</span>, <span class="st">"^Line"</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>
+<span class="co">#&gt; [1] "Line"</span>
+<span class="fu">str_extract_all</span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/regex.html">regex</a></span><span class="op">(</span><span class="st">"^Line"</span>, multiline <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>
+<span class="co">#&gt; [1] "Line" "Line" "Line"</span></code></pre></div>
+</li>
+<li>
+<p><code>comments = TRUE</code> allows you to use comments and white space to make
+complex regular expressions more understandable. Spaces are ignored, as is
+everything after <code>#</code>. To match a literal space, you’ll need to escape it:
+<code>"\\ "</code>.</p>
+<div class="sourceCode" id="cb354"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">phone</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/regex.html">regex</a></span><span class="op">(</span><span class="st">"
+  \\(?     # optional opening parens
+  (\\d{3}) # area code
+  [) -]?   # optional closing parens, space, or dash
+  (\\d{3}) # another three numbers
+  [ -]?    # optional space or dash
+  (\\d{3}) # three more numbers
+  "</span>, comments <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+
+<span class="fu">str_match</span><span class="op">(</span><span class="st">"514-791-8141"</span>, <span class="va">phone</span><span class="op">)</span>
+<span class="co">#&gt;      [,1]          [,2]  [,3]  [,4] </span>
+<span class="co">#&gt; [1,] "514-791-814" "514" "791" "814"</span></code></pre></div>
+</li>
+<li><p><code>dotall = TRUE</code> allows <code>.</code> to match everything, including <code>\n</code>.</p></li>
+</ul>
+<p>There are three other functions you can use instead of <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code>:</p>
+<ul>
+<li>
+<p><code>fixed()</code>: matches exactly the specified sequence of bytes. It ignores
+all special regular expressions and operates at a very low level.
+This allows you to avoid complex escaping and can be much faster than
+regular expressions. The following microbenchmark shows that it’s about
+3x faster for a simple example.</p>
+<div class="sourceCode" id="cb355"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">microbenchmark</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/microbenchmark/man/microbenchmark.html">microbenchmark</a></span><span class="op">(</span>
+  fixed <span class="op">=</span> <span class="fu">str_detect</span><span class="op">(</span><span class="va">sentences</span>, <span class="fu">fixed</span><span class="op">(</span><span class="st">"the"</span><span class="op">)</span><span class="op">)</span>,
+  regex <span class="op">=</span> <span class="fu">str_detect</span><span class="op">(</span><span class="va">sentences</span>, <span class="st">"the"</span><span class="op">)</span>,
+  times <span class="op">=</span> <span class="fl">20</span>
+<span class="op">)</span>
+<span class="co">#&gt; Unit: microseconds</span>
+<span class="co">#&gt;   expr     min       lq     mean   median       uq     max neval</span>
+<span class="co">#&gt;  fixed 100.392 101.3465 118.7986 105.9055 108.8545 367.118    20</span>
+<span class="co">#&gt;  regex 346.595 349.1145 353.7308 350.2785 351.4135 403.057    20</span></code></pre></div>
+<p>Beware using <code>fixed()</code> with non-English data. It is problematic because
+there are often multiple ways of representing the same character. For
+example, there are two ways to define “á”: either as a single character or
+as an “a” plus an accent:</p>
+<div class="sourceCode" id="cb356"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">a1</span> <span class="op">&lt;-</span> <span class="st">"\u00e1"</span>
+<span class="va">a2</span> <span class="op">&lt;-</span> <span class="st">"a\u0301"</span>
+<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">a1</span>, <span class="va">a2</span><span class="op">)</span>
+<span class="co">#&gt; [1] "á" "á"</span>
+<span class="va">a1</span> <span class="op">==</span> <span class="va">a2</span>
+<span class="co">#&gt; [1] FALSE</span></code></pre></div>
+<p>They render identically, but because they’re defined differently,
+<code>fixed()</code> doesn’t find a match. Instead, you can use <code>coll()</code>, defined
+next, to respect human character comparison rules:</p>
+<div class="sourceCode" id="cb357"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_detect</span><span class="op">(</span><span class="va">a1</span>, <span class="fu">fixed</span><span class="op">(</span><span class="va">a2</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] FALSE</span>
+<span class="fu">str_detect</span><span class="op">(</span><span class="va">a1</span>, <span class="fu">coll</span><span class="op">(</span><span class="va">a2</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] TRUE</span></code></pre></div>
+</li>
+<li>
+<p><code>coll()</code>: compare strings using standard <strong>coll</strong>ation rules. This is
+useful for doing case insensitive matching. Note that <code>coll()</code> takes a
+<code>locale</code> parameter that controls which rules are used for comparing
+characters. Unfortunately different parts of the world use different rules!</p>
+<div class="sourceCode" id="cb358"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># That means you also need to be aware of the difference</span>
+<span class="co"># when doing case insensitive matches:</span>
+<span class="va">i</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"I"</span>, <span class="st">"İ"</span>, <span class="st">"i"</span>, <span class="st">"ı"</span><span class="op">)</span>
+<span class="va">i</span>
+<span class="co">#&gt; [1] "I" "İ" "i" "ı"</span>
+
+<span class="fu">str_subset</span><span class="op">(</span><span class="va">i</span>, <span class="fu">coll</span><span class="op">(</span><span class="st">"i"</span>, ignore_case <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] "I" "i"</span>
+<span class="fu">str_subset</span><span class="op">(</span><span class="va">i</span>, <span class="fu">coll</span><span class="op">(</span><span class="st">"i"</span>, ignore_case <span class="op">=</span> <span class="cn">TRUE</span>, locale <span class="op">=</span> <span class="st">"tr"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] "İ" "i"</span></code></pre></div>
+<p>Both <code>fixed()</code> and <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code> have <code>ignore_case</code> arguments, but they
+do not allow you to pick the locale: they always use the default locale.
+You can see what that is with the following code; more on stringi
+later.</p>
+<div class="sourceCode" id="cb359"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">stringi</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/stringi/man/stri_locale_info.html">stri_locale_info</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; $Language</span>
+<span class="co">#&gt; [1] "en"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $Country</span>
+<span class="co">#&gt; [1] "US"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $Variant</span>
+<span class="co">#&gt; [1] ""</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $Name</span>
+<span class="co">#&gt; [1] "en_US"</span></code></pre></div>
+<p>The downside of <code>coll()</code> is speed; because the rules for recognising which
+characters are the same are complicated, <code>coll()</code> is relatively slow
+compared to <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code> and <code>fixed()</code>.</p>
+</li>
+<li>
+<p>As you saw with <code>str_split()</code> you can use <code>boundary()</code> to match boundaries.
+You can also use it with the other functions:</p>
+<div class="sourceCode" id="cb360"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="st">"This is a sentence."</span>
+<span class="fu">str_view_all</span><span class="op">(</span><span class="va">x</span>, <span class="fu">boundary</span><span class="op">(</span><span class="st">"word"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-382a200f56fb8e6a1fd3" style="width:960px;height:100%;" class="str_view html-widget"></div>
+    <script type="application/json" data-for="htmlwidget-382a200f56fb8e6a1fd3">{"x":{"html":"<ul>\n  <li><span class='match'>This<\/span> <span class='match'>is<\/span> <span class='match'>a<\/span> <span class='match'>sentence<\/span>.<\/li>\n<\/ul>"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb361"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">str_extract_all</span><span class="op">(</span><span class="va">x</span>, <span class="fu">boundary</span><span class="op">(</span><span class="st">"word"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [[1]]</span>
+<span class="co">#&gt; [1] "This"     "is"       "a"        "sentence"</span></code></pre></div>
+</li>
+</ul>
+<div id="exercises-43" class="section level3">
+<h3>
+<span class="header-section-number">14.5.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-43"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p>How would you find all strings containing <code>\</code> with <code><a href="https://rdrr.io/r/base/regex.html">regex()</a></code> vs.
+with <code>fixed()</code>?</p></li>
+<li><p>What are the five most common words in <code>sentences</code>?</p></li>
+</ol>
+</div>
+</div>
+<div id="other-uses-of-regular-expressions" class="section level2">
+<h2>
+<span class="header-section-number">14.6</span> Other uses of regular expressions<a class="anchor" aria-label="anchor" href="#other-uses-of-regular-expressions"><i class="fas fa-link"></i></a>
+</h2>
+<p>There are two useful function in base R that also use regular expressions:</p>
+<ul>
+<li>
+<p><code><a href="https://rdrr.io/r/utils/apropos.html">apropos()</a></code> searches all objects available from the global environment. This
+is useful if you can’t quite remember the name of the function.</p>
+<div class="sourceCode" id="cb362"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/apropos.html">apropos</a></span><span class="op">(</span><span class="st">"replace"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "%+replace%"       "replace"          "replace_na"       "setReplaceMethod"</span>
+<span class="co">#&gt; [5] "str_replace"      "str_replace_all"  "str_replace_na"   "theme_replace"</span></code></pre></div>
+</li>
+<li>
+<p><code><a href="https://rdrr.io/r/base/list.files.html">dir()</a></code> lists all the files in a directory. The <code>pattern</code> argument takes
+a regular expression and only returns file names that match the pattern.
+For example, you can find all the R Markdown files in the current
+directory with:</p>
+<div class="sourceCode" id="cb363"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html">dir</a></span><span class="op">(</span>pattern <span class="op">=</span> <span class="st">"\\.Rmd$"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; [1] "communicate-plots.Rmd" "communicate.Rmd"       "datetimes.Rmd"        </span>
+<span class="co">#&gt; [4] "EDA.Rmd"               "explore.Rmd"           "factors.Rmd"</span></code></pre></div>
+<p>(If you’re more comfortable with “globs” like <code>*.Rmd</code>, you can convert
+them to regular expressions with <code><a href="https://rdrr.io/r/utils/glob2rx.html">glob2rx()</a></code>):</p>
+</li>
+</ul>
+</div>
+<div id="stringi" class="section level2">
+<h2>
+<span class="header-section-number">14.7</span> stringi<a class="anchor" aria-label="anchor" href="#stringi"><i class="fas fa-link"></i></a>
+</h2>
+<p>stringr is built on top of the <strong>stringi</strong> package. stringr is useful when you’re learning because it exposes a minimal set of functions, which have been carefully picked to handle the most common string manipulation functions. stringi, on the other hand, is designed to be comprehensive. It contains almost every function you might ever need: stringi has 250 functions to stringr’s 49.</p>
+<p>If you find yourself struggling to do something in stringr, it’s worth taking a look at stringi. The packages work very similarly, so you should be able to translate your stringr knowledge in a natural way. The main difference is the prefix: <code>str_</code> vs. <code>stri_</code>.</p>
+<div id="exercises-44" class="section level3">
+<h3>
+<span class="header-section-number">14.7.1</span> Exercises<a class="anchor" aria-label="anchor" href="#exercises-44"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>
+<p>Find the stringi functions that:</p>
+<ol style="list-style-type: decimal">
+<li>Count the number of words.</li>
+<li>Find duplicated strings.</li>
+<li>Generate random text.</li>
+</ol>
+</li>
+<li><p>How do you control the language that <code>stri_sort()</code> uses for
+sorting?</p></li>
+</ol>
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="relational-data.html"><span class="header-section-number">13</span> Relational data</a></div>
+<div class="next"><a href="factors.html"><span class="header-section-number">15</span> Factors</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#strings"><span class="header-section-number">14</span> Strings</a></li>
+<li>
+<a class="nav-link" href="#introduction-8"><span class="header-section-number">14.1</span> Introduction</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#prerequisites-8"><span class="header-section-number">14.1.1</span> Prerequisites</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#string-basics"><span class="header-section-number">14.2</span> String basics</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#string-length"><span class="header-section-number">14.2.1</span> String length</a></li>
+<li><a class="nav-link" href="#combining-strings"><span class="header-section-number">14.2.2</span> Combining strings</a></li>
+<li><a class="nav-link" href="#subsetting-strings"><span class="header-section-number">14.2.3</span> Subsetting strings</a></li>
+<li><a class="nav-link" href="#locales"><span class="header-section-number">14.2.4</span> Locales</a></li>
+<li><a class="nav-link" href="#exercises-32"><span class="header-section-number">14.2.5</span> Exercises</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#matching-patterns-with-regular-expressions"><span class="header-section-number">14.3</span> Matching patterns with regular expressions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#basic-matches"><span class="header-section-number">14.3.1</span> Basic matches</a></li>
+<li><a class="nav-link" href="#anchors"><span class="header-section-number">14.3.2</span> Anchors</a></li>
+<li><a class="nav-link" href="#character-classes-and-alternatives"><span class="header-section-number">14.3.3</span> Character classes and alternatives</a></li>
+<li><a class="nav-link" href="#repetition"><span class="header-section-number">14.3.4</span> Repetition</a></li>
+<li><a class="nav-link" href="#grouping-and-backreferences"><span class="header-section-number">14.3.5</span> Grouping and backreferences</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#tools"><span class="header-section-number">14.4</span> Tools</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#detect-matches"><span class="header-section-number">14.4.1</span> Detect matches</a></li>
+<li><a class="nav-link" href="#extract-matches"><span class="header-section-number">14.4.2</span> Extract matches</a></li>
+<li><a class="nav-link" href="#grouped-matches"><span class="header-section-number">14.4.3</span> Grouped matches</a></li>
+<li><a class="nav-link" href="#replacing-matches"><span class="header-section-number">14.4.4</span> Replacing matches</a></li>
+<li><a class="nav-link" href="#splitting"><span class="header-section-number">14.4.5</span> Splitting</a></li>
+<li><a class="nav-link" href="#find-matches"><span class="header-section-number">14.4.6</span> Find matches</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#other-types-of-pattern"><span class="header-section-number">14.5</span> Other types of pattern</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-43"><span class="header-section-number">14.5.1</span> Exercises</a></li></ul>
+</li>
+<li><a class="nav-link" href="#other-uses-of-regular-expressions"><span class="header-section-number">14.6</span> Other uses of regular expressions</a></li>
+<li>
+<a class="nav-link" href="#stringi"><span class="header-section-number">14.7</span> stringi</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercises-44"><span class="header-section-number">14.7.1</span> Exercises</a></li></ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/hadley/r4ds/blob/master/strings.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/hadley/r4ds/edit/master/strings.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>R for Data Science</strong>" was written by Hadley Wickham and Garrett Grolemund. </p>
   </div>
 
-  <div class="flex flex-col max-w-screen-xl min-h-screen px-5 mx-auto overflow-x-hidden md:px-10">
-  <header class="relative block md:items-center md:justify-center md:flex md:pt-5">
-    <div class="flex items-center justify-between mt-5 mb-3">
-    <div class="md:absolute md:left-0 md:top-6"><nav class="text-lg">
-    <a class="p-1 -ml-1" href="/">RDocumentation</a></nav>
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
 
-
-
-
-  <iframe width='100%' height='680px' src="https://api.mapbox.com/styles/v1/nscott13/ckvx0z9s64bo214s3bm29lz36.html?title=false&access_token=pk.eyJ1IjoibnNjb3R0MTMiLCJhIjoiY2t1c2RxN3Q5NWU5ZjJvbnpmZjltem1zciJ9.SiRbbhyau2uJfO5PzpY0ig&zoomwheel=false#11.12/39.9732/-75.1623" title="Basic" style="border:none;"></iframe>
-
-
-
-  <br> </br>
-  <div class="Ongoing_Cases">
-  <h1 class="Title">Analysis</h1>
-  <p>Methodology</p>
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+</html>
