@@ -10,4 +10,4 @@ description: > # your text below (remove <br> elements if you don't need line br
 Link: <a href="https://www.linkedin.com/in/nicholastscott/">View My LinkedIn Profile</a>
 <br></br>
 theme: jekyll-theme-minimal
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+google_analytics: UA-000000-00 # your Google Analytics tracking ID here
