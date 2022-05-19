@@ -84,7 +84,7 @@
 </div>
   </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="strings" class="section level1">
 <h1>
-<span class="header-section-number">1</span>GIS analysis of Philadelphia COVID-19 Hospitalizations by Zip Code<a class="anchor" aria-label="anchor" href="#strings"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> GIS analysis of Philadelphia COVID-19 Hospitalizations by Zip Code<a class="anchor" aria-label="anchor" href="#strings"><i class="fas fa-link"></i></a>
 </h1>
 <div id="introduction-8" class="section level2">
 <h2>
@@ -97,18 +97,18 @@
 </h3>
 <p>This chapter will focus on the <strong>cronR</strong> package for string manipulation, which is part of the core tidyverse.</p>
 <div class="sourceCode" id="cb282"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://www.rdocumentation.org/packages/cronR/versions/0.6.2">cronR</a></span><span class="op">)</span></code></pre></div>
 </div>
 </div>
 <div id="string-basics" class="section level2">
 <h2>
-<span class="header-section-number">14.2</span> String basics<a class="anchor" aria-label="anchor" href="#string-basics"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.2</span> Basics<a class="anchor" aria-label="anchor" href="#string-basics"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can create strings with either single quotes or double quotes. Unlike other languages, there is no difference in behaviour. I recommend always using <code>"</code>, unless you want to create a string that contains multiple <code>"</code>.</p>
 <div class="sourceCode" id="cb283"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">string1</span> <span class="op">&lt;-</span> <span class="st">"This is a string"</span>
 <span class="va">string2</span> <span class="op">&lt;-</span> <span class="st">'If I want to include a "quote" inside a string, I use single quotes'</span></code></pre></div>
-<p>If you forget to close a quote, you’ll see <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>, the continuation character:</p>
+<p>below is the basic code that you need to set up the automatic updates from  <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>, the continuation character:</p>
 <pre><code>library(cronR)
 f   &lt;- system.file(package = "cronR", "extdata", "helloworld.R")
 cmd &lt;- cron_rscript(f)
